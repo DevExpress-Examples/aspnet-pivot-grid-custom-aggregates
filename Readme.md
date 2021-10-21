@@ -22,7 +22,7 @@ This example adds the FirstValue([ProductName]) expression to the _First Sold Pr
 
 ![first value function](images/image.png)
 
-| Calculated Field | Expression |
+| Data Field | Expression |
 | --- | --- |
 | First Sold Product | ``` FirstValue([ProductName]) ``` |
 
