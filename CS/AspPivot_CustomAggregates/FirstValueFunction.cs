@@ -10,7 +10,8 @@ namespace Dashboard_FirstValueAggregate {
 
         public int MaxOperandCount => 1;
 
-        public string Description => "Aggregates data by input value, and displays the first value of the field";
+        public string Description => @"Aggregates data by input value, 
+            and displays the first value of the field";
 
         public FunctionCategory Category => DevExpress.Data.Filtering.FunctionCategory.Text;
 
