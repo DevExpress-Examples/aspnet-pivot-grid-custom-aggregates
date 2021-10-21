@@ -32,4 +32,4 @@ Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/C
 
 ## More Examples
 
-
+[Pivot Grid for WinForms - How to Aggregate Data by the Field's First Value](https://github.com/DevExpress-Examples/winforms-pivot-grid-custom-aggregates)
