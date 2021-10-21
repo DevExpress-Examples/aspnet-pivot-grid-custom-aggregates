@@ -14,6 +14,7 @@ This example shows how to aggregate data by the field's first value.
 
 * [WebForm1.aspx](./CS/AspPivot_CustomAggregates/WebForm1.aspx) (VB: [WebForm1.aspx](./VB/AspPivot_CustomAggregates/WebForm1.aspx))
 * [WebForm1.aspx.cs](./CS/AspPivot_CustomAggregates/WebForm1.aspx.cs) (VB:[WebForm1.aspx.vb](./VB/AspPivot_CustomAggregates/WebForm1.aspx.vb))
+* [FirstValueFunction.cs](./CS/AspPivot_CustomAggregates/FirstValueFunction.cs) (VB: [FirstValueFunction.vb](./VB/AspPivot_CustomAggregates/FirstValueFunction.vb))
 <!-- default file list end -->
 
 ## Overview
