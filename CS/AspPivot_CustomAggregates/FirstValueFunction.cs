@@ -34,7 +34,6 @@ namespace Dashboard_FirstValueAggregate {
     class FirstValueAggregateState<TInput> : ICustomAggregateFunctionContext<TInput, TInput> {
         bool isSet = false;
         TInput firstValue;
-
         public TInput GetResult() {
             return isSet ? firstValue : default(TInput);
         }
