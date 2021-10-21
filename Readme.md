@@ -1,18 +1,34 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/419783531/21.2.1%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1038521)
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128576996/17.1.4%2B)
+[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T540964)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
+
+
+# Pivot Grid for Web Forms - How to Aggregate Data by the Field's First Value
+
+This example shows how to aggregate data by the field's first value.
+
 <!-- default file list -->
-*Files to look at*:
+## Files to look at
 
-* [WebForm1.aspx](./CS/AspPivot_GettingStarted/WebForm1.aspx) (VB: [WebForm1.aspx](./VB/AspPivot_GettingStarted/WebForm1.aspx))
+* [WebForm1.aspx](./CS/AspPivot_CustomAggregates/WebForm1.aspx) (VB: [WebForm1.aspx](./VB/AspPivot_CustomAggregates/WebForm1.aspx))
 <!-- default file list end -->
-# ASP.NET Pivot Grid - Getting Started - Bind a Pivot Grid to an MDB Database (Runtime sample)
 
+## Overview
 
-The example contains the source code of the project created in this step-by-step tutorial: <a href="https://documentation.devexpress.com/AspNet/12008/ASP-NET-WebForms-Controls/Pivot-Grid/Getting-Started/Lesson-1-Bind-a-Pivot-Grid-to-an-MDB-Database">Lesson 1 - Bind a Pivot Grid to an MDB Database</a>
+This example adds the FirstValue([ProductName]) expression to the First Sold Product field. The expression returns the first sold product by Sales Persons in each product category.
 
-<br/>
+![first value function](images/image.png)
+
+| Calculated Field | Expression |
+| --- | --- |
+| First Sold Product | ``` FirstValue([ProductName]) ``` |
+
+Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project (see [WebForm1.aspx.cs](./CS/AspPivot_CustomAggregates/WebForm1.aspx.cs#L9)/[WebForm1.aspx.vb](./VB/AspPivot_CustomAggregates/WebForm1.aspx.vb#L11)).
+
+## Documentation
+
+## More Examples
 
 
