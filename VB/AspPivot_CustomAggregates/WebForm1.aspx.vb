@@ -8,7 +8,7 @@ Namespace AspPivot_CustomFunctions
         Inherits Web.UI.Page
 
         Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-            Call CriteriaOperator.RegisterCustomFunction(New FirstValueAggregateFunction())
+            CriteriaOperator.RegisterCustomFunction(New FirstValueAggregateFunction())
         End Sub
     End Class
 End Namespace
