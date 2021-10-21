@@ -26,7 +26,7 @@ This example adds the FirstValue([ProductName]) expression to the _First Sold Pr
 | --- | --- |
 | First Sold Product | ``` FirstValue([ProductName]) ``` |
 
-Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project (see [WebForm1.aspx.cs](./CS/AspPivot_CustomAggregates/WebForm1.aspx.cs#L9)/[WebForm1.aspx.vb](./VB/AspPivot_CustomAggregates/WebForm1.aspx.vb#L11)).
+Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project (see [WebForm1.aspx.cs](./CS/AspPivot_CustomAggregates/WebForm1.aspx.cs#L8)/[WebForm1.aspx.vb](./VB/AspPivot_CustomAggregates/WebForm1.aspx.vb#L9)).
 
 ## Documentation
 
