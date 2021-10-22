@@ -12,7 +12,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <dx:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server" ClientIDMode="AutoID" DataSourceID="SqlDataSource1" OptionsView-ShowColumnGrandTotals ="False" OptionsView-ShowRowGrandTotals="False" OptionsView-ShowRowTotals="False" Theme="Metropolis">
+            <dx:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server" ClientIDMode="AutoID" DataSourceID="SqlDataSource1" 
+                OptionsView-ShowColumnGrandTotals ="False" OptionsView-ShowRowGrandTotals="False" OptionsView-ShowRowTotals="False" Theme="Metropolis">
                 <Fields>
                     <dx:PivotGridField ID="fieldCountry" Area="RowArea" AreaIndex="0" FieldName="Country">
                     </dx:PivotGridField>
