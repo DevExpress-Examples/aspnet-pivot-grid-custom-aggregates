@@ -6,6 +6,9 @@
 
 
 # Pivot Grid for Web Forms - How to Aggregate Data by the Field's First Value
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/419783531/)**
+<!-- run online end -->
 
 This example shows how to aggregate data by the field's first value.
 
