@@ -32,6 +32,7 @@ Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/C
 ## Documentation
 
 - [Pivot Grid Expression Syntax](https://docs.devexpress.com/CoreLibraries/120512/devexpress-pivot-grid-core-library/pivot-grid-expression-syntax)
+- [ASPxPivotGrid ](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.ASPxPivotGrid)
 
 ## More Examples
 
