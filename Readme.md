@@ -31,6 +31,8 @@ Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/C
 
 ## Documentation
 
+- [Pivot Grid Expression Syntax](https://docs.devexpress.com/CoreLibraries/120512/devexpress-pivot-grid-core-library/pivot-grid-expression-syntax)
+
 ## More Examples
 
 [Pivot Grid for WinForms - How to Aggregate Data by the Field's First Value](https://github.com/DevExpress-Examples/winforms-pivot-grid-custom-aggregates)
