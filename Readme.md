@@ -19,7 +19,7 @@ This example shows how to aggregate data by the field's first value.
 
 ## Overview
 
-This example adds the FirstValue([ProductName]) expression to the _First Sold Product_ field. The expression returns the first sold product by _Sales Persons_ in each product category.
+This example adds the `FirstValue([ProductName])` expression to the _First Sold Product_ field. The expression returns the first sold product by _Sales Persons_ in each product category.
 
 ![first value function](images/image.png)
 
