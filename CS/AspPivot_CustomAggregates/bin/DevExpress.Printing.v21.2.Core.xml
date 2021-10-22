@@ -1262,7 +1262,7 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.DocumentServices.ServiceModel.DataContracts.ReportParameterContainer"/> class with the default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.DocumentServices.ServiceModel.DataContracts.ReportParameterContainer.ParameterLayouItems">
+    <member name="P:DevExpress.DocumentServices.ServiceModel.DataContracts.ReportParameterContainer.ParameterLayoutItems">
       <summary />
       <value></value>
     </member>
@@ -21396,7 +21396,7 @@
     </member>
     <member name="P:DevExpress.XtraPrinting.PdfExportOptions.PdfUACompatibility">
       <summary>
-        <para>Specifies document compatibility with the PDF/A specification.</para>
+        <para>Specifies document compatibility with the PDF/UA specification.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraPrinting.PdfUACompatibility"/> enumeration value.</value>
     </member>
@@ -25853,6 +25853,23 @@ The DefaultBoolean.Default value is equivalent to True.</value>
         <para>Provides types that describe binding expressions for report parameters‘ properties.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.XtraReports.Expressions.BaseCustomFunctions">
+      <summary />
+    </member>
+    <member name="M:DevExpress.XtraReports.Expressions.BaseCustomFunctions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraReports.Expressions.BaseCustomFunctions"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraReports.Expressions.BaseCustomFunctions.Register(DevExpress.Data.Filtering.ICustomFunctionOperator[])">
+      <summary />
+      <param name="functionOperators"></param>
+    </member>
+    <member name="M:DevExpress.XtraReports.Expressions.BaseCustomFunctions.Unregister(System.String)">
+      <summary />
+      <param name="name"></param>
+      <returns></returns>
+    </member>
     <member name="T:DevExpress.XtraReports.Expressions.BasicExpressionBinding">
       <summary>
         <para>Stores a binding expression that is parsed and processed to specify a report control or parameter‘s property value.</para>
@@ -25924,6 +25941,38 @@ The DefaultBoolean.Default value is equivalent to True.</value>
     </member>
     <member name="N:DevExpress.XtraReports.Expressions.Native">
       <summary />
+    </member>
+    <member name="T:DevExpress.XtraReports.Expressions.Native.ExpressionPropertyDescriptorBase">
+      <summary />
+    </member>
+    <member name="P:DevExpress.XtraReports.Expressions.Native.ExpressionPropertyDescriptorBase.EventName">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraReports.Expressions.Native.ExpressionPropertyDescriptorBase.IsReadOnly">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraReports.Expressions.Native.ExpressionPropertyDescriptorBase.Position">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraReports.Expressions.Native.ExpressionPropertyDescriptorBase.PropertyName">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraReports.Expressions.Native.ExpressionPropertyDescriptorBase.PropertyPath">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraReports.Expressions.Native.ExpressionPropertyDescriptorBase.PropertyType">
+      <summary />
+      <value></value>
+    </member>
+    <member name="M:DevExpress.XtraReports.Expressions.Native.ExpressionPropertyDescriptorBase.ShouldSerializeValue(System.Object)">
+      <summary />
+      <param name="component"></param>
+      <returns></returns>
     </member>
     <member name="T:DevExpress.XtraReports.Expressions.Native.IExpressionEditorDescriptor">
       <summary />
@@ -26136,9 +26185,8 @@ The DefaultBoolean.Default value is equivalent to True.</value>
       <param name="configuration"></param>
       <returns></returns>
     </member>
-    <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.AddSeparatorItem(System.Action{DevExpress.XtraReports.Parameters.SeparatorItemFluentBuilder})">
+    <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.AddSeparatorItem">
       <summary />
-      <param name="configuration"></param>
       <returns></returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.BeginGroupItem(System.String)">
@@ -26233,28 +26281,6 @@ The DefaultBoolean.Default value is equivalent to True.</value>
       <summary />
       <param name="parameterName"></param>
       <param name="configuration"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetSeparatorItem(System.Int32)">
-      <summary />
-      <param name="index"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetSeparatorItem(System.Int32,System.Action{DevExpress.XtraReports.Parameters.SeparatorItemFluentBuilder})">
-      <summary />
-      <param name="index"></param>
-      <param name="configuration"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GroupItem(DevExpress.XtraReports.Parameters.GroupItemFluentBuilder)">
-      <summary />
-      <param name="parentBuilder"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GroupItem(DevExpress.XtraReports.Parameters.GroupItemFluentBuilder,DevExpress.XtraReports.Parameters.GroupLayoutItem)">
-      <summary />
-      <param name="parentBuilder"></param>
-      <param name="group"></param>
       <returns></returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.RemoveGroupItem(DevExpress.XtraReports.Parameters.Parameter)">
@@ -26635,10 +26661,6 @@ The DefaultBoolean.Default value is equivalent to True.</value>
       </summary>
       <value>A <see cref="T:DevExpress.XtraEditors.BaseEdit"/> class descendant.</value>
     </member>
-    <member name="P:DevExpress.XtraReports.Parameters.ParameterInfo.Enabled">
-      <summary />
-      <value></value>
-    </member>
     <member name="M:DevExpress.XtraReports.Parameters.ParameterInfo.GetEditor(System.Boolean)">
       <summary>
         <para>For internal use.</para>
@@ -26651,14 +26673,6 @@ The DefaultBoolean.Default value is equivalent to True.</value>
         <para>Provides access to the parameter associated with the current <see cref="T:DevExpress.XtraReports.Parameters.ParameterInfo"/> object.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraReports.Parameters.Parameter"/> object.</value>
-    </member>
-    <member name="P:DevExpress.XtraReports.Parameters.ParameterInfo.Value">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.XtraReports.Parameters.ParameterInfo.Visible">
-      <summary />
-      <value></value>
     </member>
     <member name="T:DevExpress.XtraReports.Parameters.ParameterItemFluentBuilder">
       <summary />
@@ -26682,10 +26696,6 @@ The DefaultBoolean.Default value is equivalent to True.</value>
     <member name="M:DevExpress.XtraReports.Parameters.ParameterPanelFluentBuilderBase.End">
       <summary />
     </member>
-    <member name="M:DevExpress.XtraReports.Parameters.ParameterPanelFluentBuilderBase.RecreateParameterItems">
-      <summary />
-      <returns></returns>
-    </member>
     <member name="T:DevExpress.XtraReports.Parameters.ParametersRequestEventArgs">
       <summary>
         <para>Provides data for the <see cref="E:DevExpress.XtraReports.UI.XtraReport.ParametersRequestBeforeShow"/> and <see cref="E:DevExpress.XtraReports.UI.XtraReport.ParametersRequestSubmit"/> events.</para>
@@ -26706,9 +26716,13 @@ The DefaultBoolean.Default value is equivalent to True.</value>
       <summary>
         <para>Contains information about the parameter, which value was changed.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraReports.Parameters.ParameterInfo"/> object.</value>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.ParametersRequestValueChangedEventArgs.ErrorText">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraReports.Parameters.ParametersRequestValueChangedEventArgs.ParametersInformation">
       <summary />
       <value></value>
     </member>

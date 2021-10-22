@@ -1897,6 +1897,26 @@
       </summary>
       <value>true if an end-user can expand/collapse the field value; otherwise, false.</value>
     </member>
+    <member name="M:DevExpress.XtraPivotGrid.Data.FieldValueCellBase.CreateDrillDownDataSource">
+      <summary />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPivotGrid.Data.FieldValueCellBase.CreateDrillDownDataSource(System.Collections.Generic.List{System.String})">
+      <summary />
+      <param name="customColumns"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPivotGrid.Data.FieldValueCellBase.CreateDrillDownDataSource(System.Int32)">
+      <summary />
+      <param name="maxRowCount"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPivotGrid.Data.FieldValueCellBase.CreateDrillDownDataSource(System.Int32,System.Collections.Generic.List{System.String})">
+      <summary />
+      <param name="maxRowCount"></param>
+      <param name="customColumns"></param>
+      <returns></returns>
+    </member>
     <member name="P:DevExpress.XtraPivotGrid.Data.FieldValueCellBase.DisplayText">
       <summary>
         <para>Gets the text displayed within the cell.</para>

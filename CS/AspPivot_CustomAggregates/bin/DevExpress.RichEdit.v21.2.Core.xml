@@ -18559,26 +18559,32 @@
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.WatermarkManager.Remove">
       <summary>
-        <para>Removes the watermark.</para>
+        <para>Removes watermarks from the document.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.WatermarkManager.Remove(DevExpress.XtraRichEdit.API.Native.Section,DevExpress.XtraRichEdit.API.Native.HeaderFooterType)">
-      <summary />
-      <param name="section"></param>
-      <param name="type"></param>
+      <summary>
+        <para>Removes a watermark from a header of the specified section.</para>
+      </summary>
+      <param name="section">The target section.</param>
+      <param name="type">The type of the section’s header that contains the watermark to be removed.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.WatermarkManager.SetImage(DevExpress.XtraRichEdit.API.Native.Section,DevExpress.XtraRichEdit.API.Native.HeaderFooterType,System.Drawing.Image)">
-      <summary />
-      <param name="section"></param>
-      <param name="type"></param>
-      <param name="image"></param>
+      <summary>
+        <para>Adds an image watermark to a header of the specified section.</para>
+      </summary>
+      <param name="section">The target section.</param>
+      <param name="type">The type of the section’s header in which to insert the watermark.</param>
+      <param name="image">A watermark image.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.WatermarkManager.SetImage(DevExpress.XtraRichEdit.API.Native.Section,DevExpress.XtraRichEdit.API.Native.HeaderFooterType,System.Drawing.Image,DevExpress.XtraRichEdit.API.Native.ImageWatermarkOptions)">
-      <summary />
-      <param name="section"></param>
-      <param name="type"></param>
-      <param name="image"></param>
-      <param name="options"></param>
+      <summary>
+        <para>Adds an image watermark to a header of the specified section.</para>
+      </summary>
+      <param name="section">The target section.</param>
+      <param name="type">The type of the section’s header in which to insert the watermark.</param>
+      <param name="image">A watermark image.</param>
+      <param name="options">An object that contains image watermark options.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.WatermarkManager.SetImage(System.Drawing.Image)">
       <summary>
@@ -18594,17 +18600,21 @@
       <param name="options">An object that contains image watermark options.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.WatermarkManager.SetText(DevExpress.XtraRichEdit.API.Native.Section,DevExpress.XtraRichEdit.API.Native.HeaderFooterType,System.String)">
-      <summary />
-      <param name="section"></param>
-      <param name="type"></param>
-      <param name="text"></param>
+      <summary>
+        <para>Adds a text watermark to a header of the specified section.</para>
+      </summary>
+      <param name="section">The target section.</param>
+      <param name="type">The type of the section’s header in which to insert the watermark.</param>
+      <param name="text">The watermark text.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.WatermarkManager.SetText(DevExpress.XtraRichEdit.API.Native.Section,DevExpress.XtraRichEdit.API.Native.HeaderFooterType,System.String,DevExpress.XtraRichEdit.API.Native.TextWatermarkOptions)">
-      <summary />
-      <param name="section"></param>
-      <param name="type"></param>
-      <param name="text"></param>
-      <param name="options"></param>
+      <summary>
+        <para>Adds a text watermark to a header of the specified section.</para>
+      </summary>
+      <param name="section">The target section.</param>
+      <param name="type">The type of the section’s header in which to insert the watermark.</param>
+      <param name="text">The watermark text.</param>
+      <param name="options">An object that contains text watermark options.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.WatermarkManager.SetText(System.String)">
       <summary>
@@ -18636,11 +18646,13 @@
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.WatermarkType.Mixed">
-      <summary />
+      <summary>
+        <para>The document contains both image and text watermarks.</para>
+      </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.WatermarkType.None">
       <summary>
-        <para>No watermark.</para>
+        <para>The document contains no watermarks.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.WatermarkType.Text">

@@ -2436,7 +2436,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfAnnotationFacade">
       <summary>
-        <para>Exposes a set of methods used to organize annotations without access to its inner structure.</para>
+        <para>Exposes members used to organize annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfAnnotationFacade.Color">
@@ -3117,7 +3117,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfCaretAnnotationFacade">
       <summary>
-        <para>Contains a set of properties used to manage caret annotations without access to their inner structure.</para>
+        <para>Contains members used to manage caret annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Pdf.PdfCertificationLevel">
@@ -3331,11 +3331,13 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfCircleAnnotationFacade">
       <summary>
-        <para>Exposes a set of properties used to organize circle annotations without access to their inner structure.</para>
+        <para>Exposes members used to organize circle annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Pdf.PdfClearContentOptions">
-      <summary />
+      <summary>
+        <para>Contains options that specify what content type to keep in the page area that is to be cleared.</para>
+      </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfClearContentOptions.#ctor">
       <summary>
@@ -3343,23 +3345,33 @@
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfClearContentOptions.ClearAnnotations">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets whether to clear annotations.</para>
+      </summary>
+      <value>true to remove annotations; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfClearContentOptions.ClearGraphics">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets whether to clear graphics ().</para>
+      </summary>
+      <value>true to remove graphics; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfClearContentOptions.ClearImages">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets whether to clear images.</para>
+      </summary>
+      <value>true to remove images; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfClearContentOptions.ClearText">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets whether to clear text.</para>
+      </summary>
+      <value>true to remove text; otherwise, false.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfClearContentRegions">
-      <summary />
+      <summary>
+        <para>A collection of page regions to clear.</para>
+      </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfClearContentRegions.#ctor">
       <summary>
@@ -3367,40 +3379,56 @@
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfClearContentRegions.Add(DevExpress.Pdf.PdfOrientedRectangle)">
-      <summary />
-      <param name="rectangle"></param>
+      <summary>
+        <para>Adds a page region to the collection.</para>
+      </summary>
+      <param name="rectangle">A page region.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfClearContentRegions.Add(DevExpress.Pdf.PdfOrientedRectangle,System.Boolean)">
-      <summary />
-      <param name="rectangle"></param>
-      <param name="usePageCoordinateSystem"></param>
+      <summary>
+        <para>Adds a page region to the collection.</para>
+      </summary>
+      <param name="rectangle">A page region.</param>
+      <param name="usePageCoordinateSystem">true to use page coordinate system; otherwise, false.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfClearContentRegions.Add(DevExpress.Pdf.PdfRectangle)">
-      <summary />
-      <param name="rectangle"></param>
+      <summary>
+        <para>Adds a page region to the collection.</para>
+      </summary>
+      <param name="rectangle">A page region.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfClearContentRegions.Add(DevExpress.Pdf.PdfRectangle,System.Boolean)">
-      <summary />
-      <param name="rectangle"></param>
-      <param name="usePageCoordinateSystem"></param>
+      <summary>
+        <para>Adds a page region to the collection.</para>
+      </summary>
+      <param name="rectangle">A page region.</param>
+      <param name="usePageCoordinateSystem">true to use page coordinate system; otherwise, false.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfClearContentRegions.Add(System.Collections.Generic.IEnumerable{DevExpress.Pdf.PdfOrientedRectangle})">
-      <summary />
-      <param name="rectangles"></param>
+      <summary>
+        <para>Adds a list of page regions to the collection.</para>
+      </summary>
+      <param name="rectangles">A list of page regions.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfClearContentRegions.Add(System.Collections.Generic.IEnumerable{DevExpress.Pdf.PdfOrientedRectangle},System.Boolean)">
-      <summary />
-      <param name="rectangles"></param>
-      <param name="usePageCoordinateSystem"></param>
+      <summary>
+        <para>Adds a list of page regions to the collection.</para>
+      </summary>
+      <param name="rectangles">A list of page regions.</param>
+      <param name="usePageCoordinateSystem">true to use page coordinate system; otherwise, false.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfClearContentRegions.Add(System.Collections.Generic.IEnumerable{DevExpress.Pdf.PdfRectangle})">
-      <summary />
-      <param name="rectangles"></param>
+      <summary>
+        <para>Adds a list of page regions to the collection.</para>
+      </summary>
+      <param name="rectangles">A list of page regions.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfClearContentRegions.Add(System.Collections.Generic.IEnumerable{DevExpress.Pdf.PdfRectangle},System.Boolean)">
-      <summary />
-      <param name="rectangles"></param>
-      <param name="usePageCoordinateSystem"></param>
+      <summary>
+        <para>Adds a list of page regions to the collection.</para>
+      </summary>
+      <param name="rectangles">A list of page regions.</param>
+      <param name="usePageCoordinateSystem">true to use page coordinate system; otherwise, false.</param>
     </member>
     <member name="T:DevExpress.Pdf.PdfColor">
       <summary>
@@ -4144,19 +4172,19 @@
     </member>
     <member name="M:DevExpress.Pdf.PdfDocumentFacade.FlattenAnnotations(DevExpress.Pdf.PdfAnnotationType[])">
       <summary>
-        <para>Flattens all document annotations with the specified type.</para>
+        <para>Flattens all document annotations with the specified types.</para>
       </summary>
-      <param name="types">Indicates the annotation type.</param>
+      <param name="types">An array of annotation types.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfDocumentFacade.FlattenAnnotations(System.Func{DevExpress.Pdf.PdfAnnotationFacade,System.Boolean})">
       <summary>
-        <para>Flattens all annotations that meet the specified criteria.</para>
+        <para>Flattens all document annotations that meet the specified criteria.</para>
       </summary>
       <param name="predicate">Defines a set of criteria for the <see cref="T:DevExpress.Pdf.PdfAnnotationFacade"/> object.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfDocumentFacade.FlattenAnnotations(System.String[])">
       <summary>
-        <para>Flattens annotations with the specified names.</para>
+        <para>Flattens document annotations with the specified names.</para>
       </summary>
       <param name="names">The annotation names.</param>
     </member>
@@ -4399,7 +4427,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfFileAttachmentAnnotationFacade">
       <summary>
-        <para>Contains a set of properties used to manage file attachment annotations without access to their inner structure.</para>
+        <para>Contains members used to manage file attachment annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfFileAttachmentAnnotationFacade.Attachment">
@@ -5337,7 +5365,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfFreeTextAnnotationFacade">
       <summary>
-        <para>Contains a set of properties used to manage free text annotations without access to their inner structure.</para>
+        <para>Contains members used to manage free text annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfFreeTextAnnotationFacade.BorderStyle">
@@ -5620,7 +5648,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfInkAnnotationFacade">
       <summary>
-        <para>Contains a set of properties used to manage ink annotations composed of one or multiple points on the page.</para>
+        <para>Contains members used to manage ink annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfInkAnnotationFacade.BorderStyle">
@@ -5961,7 +5989,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfLineAnnotationFacade">
       <summary>
-        <para>Contains a set of properties used to manage line annotations without access to their inner structure.</para>
+        <para>Contains members used to manage line annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfLineAnnotationFacade.BorderStyle">
@@ -6071,7 +6099,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfLinkAnnotationFacade">
       <summary>
-        <para>Contains a set of properties used to manage link annotations without access to their inner structure.</para>
+        <para>Contains members used to manage link annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfLinkAnnotationFacade.BorderStyle">
@@ -7272,7 +7300,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfPageFacade">
       <summary>
-        <para>Exposes a set of methods used to perform various operations on a PDF page without access to its inner structure.</para>
+        <para>Exposes members used to perform various operations on a PDF page without access to its inner structure.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.AddCaretAnnotation(DevExpress.Pdf.PdfRectangle)">
@@ -7308,7 +7336,7 @@
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.AddFileAttachmentAnnotation(DevExpress.Pdf.PdfRectangle,DevExpress.Pdf.PdfFileAttachment)">
       <summary>
-        <para>Adds a file attachment annotation to the specified page rectangle.</para>
+        <para>Adds a file attachment annotation in the specified page rectangle.</para>
       </summary>
       <param name="rect">A page area to add the annotation.</param>
       <param name="file">The file associated with this annotation.</param>
@@ -7331,7 +7359,7 @@
       <param name="text">An annotation text.</param>
       <returns>An object that contains free text annotation properties.</returns>
     </member>
-    <member name="M:DevExpress.Pdf.PdfPageFacade.AddInkAnnotation(System.Collections.Generic.List{DevExpress.Pdf.PdfPoint[]})">
+    <member name="M:DevExpress.Pdf.PdfPageFacade.AddInkAnnotation(System.Collections.Generic.IList{System.Collections.Generic.IList{DevExpress.Pdf.PdfPoint}})">
       <summary>
         <para>Creates an ink annotation comprised of one or multiple points on the page.</para>
       </summary>
@@ -7376,6 +7404,33 @@
       <param name="points">An array of polyline vertices.</param>
       <returns>An object that contains polyline annotation properties.</returns>
     </member>
+    <member name="M:DevExpress.Pdf.PdfPageFacade.AddRubberStampAnnotation(DevExpress.Pdf.PdfPoint,System.String)">
+      <summary>
+        <para>Creates a rubber stamp annotation at the specified page point.</para>
+      </summary>
+      <param name="point">A point on the page to position the rubber stamp annotation.</param>
+      <param name="iconName">The name of the annotation icon. Use the PdfRubberStampAnnotationIconName fields to specify a built-in annotation icon.</param>
+      <returns>An object that contains rubber stamp annotation properties.</returns>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfPageFacade.AddRubberStampAnnotation(DevExpress.Pdf.PdfRectangle,System.IO.Stream,System.Int32)">
+      <summary>
+        <para>Creates a rubber stamp annotation in the specified page rectangle.</para>
+      </summary>
+      <param name="rect">A page area to add the rubber stamp annotation.</param>
+      <param name="pdfStream">A stream that contains a document used to generate a stamp.</param>
+      <param name="pageNumber">The number of the document page used to generate a stamp.</param>
+      <returns>An object that contains rubber stamp annotation properties.</returns>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfPageFacade.AddRubberStampAnnotation(DevExpress.Pdf.PdfRectangle,System.IO.Stream,System.Int32,System.Boolean)">
+      <summary>
+        <para>Creates a rubber stamp annotation in the specified page rectangle.</para>
+      </summary>
+      <param name="rect">A page area to add the rubber stamp annotation.</param>
+      <param name="pdfStream">A stream that contains a document used to generate a stamp.</param>
+      <param name="pageNumber">The number of the document page used to generate a stamp.</param>
+      <param name="keepAspectRatio">true to make the stamp aspect ratio fit the specified rectangle; otherwise, false.</param>
+      <returns>An object that contains rubber stamp annotation properties.</returns>
+    </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.AddRubberStampAnnotation(DevExpress.Pdf.PdfRectangle,System.String)">
       <summary>
         <para>Creates a rubber stamp annotation in the specified page rectangle.</para>
@@ -7393,80 +7448,24 @@
       <param name="keepAspectRatio">true to make the stamp aspect ratio fit the specified rectangle; otherwise, false.</param>
       <returns>An object that contains rubber stamp annotation properties.</returns>
     </member>
-    <member name="M:DevExpress.Pdf.PdfPageFacade.AddRubberStampAnnotation(DevExpress.Pdf.PdfRectangle,System.String,System.IO.Stream)">
+    <member name="M:DevExpress.Pdf.PdfPageFacade.AddRubberStampAnnotation(DevExpress.Pdf.PdfRectangle,System.String,System.Int32)">
       <summary>
         <para>Creates a rubber stamp annotation in the specified page rectangle.</para>
       </summary>
       <param name="rect">A page area to add the rubber stamp annotation.</param>
-      <param name="iconName">The name of the annotation icon. Use the PdfRubberStampAnnotationIconName fields to specify a built-in annotation icon.</param>
-      <param name="pdfStream">A stream that contains a document used to generate a stamp.</param>
-      <returns>An object that contains rubber stamp annotation properties.</returns>
-    </member>
-    <member name="M:DevExpress.Pdf.PdfPageFacade.AddRubberStampAnnotation(DevExpress.Pdf.PdfRectangle,System.String,System.IO.Stream,System.Boolean)">
-      <summary>
-        <para>Creates a rubber stamp annotation in the specified page rectangle.</para>
-      </summary>
-      <param name="rect">A page area to add the rubber stamp annotation.</param>
-      <param name="iconName">The name of the annotation icon. Use the PdfRubberStampAnnotationIconName fields to specify a built-in annotation icon.</param>
-      <param name="pdfStream">A stream that contains a document used to generate a stamp.</param>
-      <param name="keepAspectRatio">true to make the stamp aspect ratio fit the specified rectangle; otherwise, false.</param>
-      <returns>An object that contains rubber stamp annotation properties.</returns>
-    </member>
-    <member name="M:DevExpress.Pdf.PdfPageFacade.AddRubberStampAnnotation(DevExpress.Pdf.PdfRectangle,System.String,System.String)">
-      <summary>
-        <para>Creates a rubber stamp annotation in the specified page rectangle.</para>
-      </summary>
-      <param name="rect">A page area to add the rubber stamp annotation.</param>
-      <param name="iconName">The name of the annotation icon. Use the PdfRubberStampAnnotationIconName fields to specify a built-in annotation icon.</param>
-      <param name="pdfFileName">The name of the document file used to generate a stamp (including the full path).</param>
-      <returns>An object that contains rubber stamp annotation properties.</returns>
-    </member>
-    <member name="M:DevExpress.Pdf.PdfPageFacade.AddRubberStampAnnotation(DevExpress.Pdf.PdfRectangle,System.String,System.String,System.Int32)">
-      <summary>
-        <para>Creates a rubber stamp annotation in the specified page rectangle.</para>
-      </summary>
-      <param name="rect">A page area to add the rubber stamp annotation.</param>
-      <param name="iconName">The name of the annotation icon. Use the PdfRubberStampAnnotationIconName fields to specify a built-in annotation icon.</param>
       <param name="pdfFileName">The name of the document file used to generate a stamp (including the full path).</param>
       <param name="pageNumber">The number of the document page used to generate a stamp.</param>
       <returns>An object that contains rubber stamp annotation properties.</returns>
     </member>
-    <member name="M:DevExpress.Pdf.PdfPageFacade.AddRubberStampAnnotation(DevExpress.Pdf.PdfRectangle,System.String,System.String,System.Int32,System.Boolean)">
+    <member name="M:DevExpress.Pdf.PdfPageFacade.AddRubberStampAnnotation(DevExpress.Pdf.PdfRectangle,System.String,System.Int32,System.Boolean)">
       <summary>
         <para>Creates a rubber stamp annotation in the specified page rectangle. Allows you use another document to generate a stamp.</para>
       </summary>
       <param name="rect">The page area where to add the rubber stamp annotation.</param>
-      <param name="iconName">The name of the annotation icon.</param>
       <param name="pdfFileName">The name of the document file used to generate a stamp (including the full path).</param>
       <param name="pageNumber">The number of the document page used to generate a stamp.</param>
       <param name="keepAspectRatio">true to make the stamp aspect ratio fit the specified rectangle; otherwise, false.</param>
       <returns>An object that contains rubber stamp annotation properties.</returns>
-    </member>
-    <member name="M:DevExpress.Pdf.PdfPageFacade.AddSoundAnnotation(DevExpress.Pdf.PdfPoint,DevExpress.Pdf.PdfSound)">
-      <summary />
-      <param name="point"></param>
-      <param name="sound"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.Pdf.PdfPageFacade.AddSoundAnnotation(DevExpress.Pdf.PdfPoint,DevExpress.Pdf.PdfSound,System.String)">
-      <summary />
-      <param name="point"></param>
-      <param name="sound"></param>
-      <param name="iconName"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.Pdf.PdfPageFacade.AddSoundAnnotation(DevExpress.Pdf.PdfRectangle,DevExpress.Pdf.PdfSound)">
-      <summary />
-      <param name="rect"></param>
-      <param name="sound"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.Pdf.PdfPageFacade.AddSoundAnnotation(DevExpress.Pdf.PdfRectangle,DevExpress.Pdf.PdfSound,System.String)">
-      <summary />
-      <param name="rect"></param>
-      <param name="sound"></param>
-      <param name="iconName"></param>
-      <returns></returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.AddSquareAnnotation(DevExpress.Pdf.PdfRectangle)">
       <summary>
@@ -7475,13 +7474,27 @@
       <param name="rect">The page area to create the square annotation.</param>
       <returns>An object that contains square annotation properties.</returns>
     </member>
+    <member name="M:DevExpress.Pdf.PdfPageFacade.AddTextAnnotation(DevExpress.Pdf.PdfPoint)">
+      <summary>
+        <para>Adds a text annotation at the specified point on the page.</para>
+      </summary>
+      <param name="point">The point on the page to position the text annotation.</param>
+      <returns>An object that contains text annotation properties.</returns>
+    </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.AddTextAnnotation(DevExpress.Pdf.PdfPoint,System.String)">
       <summary>
         <para>Adds a text annotation at the specified point on the page.</para>
       </summary>
       <param name="point">The point on the page to position the text annotation.</param>
       <param name="iconName">The name of the annotation icon.</param>
-      <returns>An object that contain text annotation properties.</returns>
+      <returns>An object that contains text annotation properties.</returns>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfPageFacade.AddTextAnnotation(DevExpress.Pdf.PdfRectangle)">
+      <summary>
+        <para>Adds a text annotation to the specified area on the page.</para>
+      </summary>
+      <param name="rect">A page area to add the text annotation.</param>
+      <returns>An object that contains text annotation properties.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.AddTextAnnotation(DevExpress.Pdf.PdfRectangle,System.String)">
       <summary>
@@ -7529,40 +7542,74 @@
       </summary>
       <value>A list of objects that contain annotation properties.</value>
     </member>
+    <member name="M:DevExpress.Pdf.PdfPageFacade.ClearContent(DevExpress.Pdf.PdfClearContentRegions)">
+      <summary>
+        <para>Clears the document content located in the specified regions.</para>
+      </summary>
+      <param name="regions">Page regions to clear.</param>
+    </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.ClearContent(DevExpress.Pdf.PdfClearContentRegions,DevExpress.Pdf.PdfClearContentOptions)">
-      <summary />
-      <param name="regions"></param>
-      <param name="options"></param>
+      <summary>
+        <para>Clears the document content located in the specified regions. Allows you to set what content type to keep in these regions.</para>
+      </summary>
+      <param name="regions">Page regions to clear.</param>
+      <param name="options">Options that specify what content type to keep in target regions.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.ClearContent(DevExpress.Pdf.PdfOrientedRectangle)">
-      <summary />
-      <param name="rect"></param>
+      <summary>
+        <para>Clears the document content located in the specified rectangle.</para>
+      </summary>
+      <param name="rect">A page rectangle to clear.</param>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfPageFacade.ClearContent(DevExpress.Pdf.PdfOrientedRectangle,DevExpress.Pdf.PdfClearContentOptions)">
+      <summary>
+        <para>Clears the document content located in the specified rectangle. Allows you to specify what content type to keep.</para>
+      </summary>
+      <param name="rect">A page rectangle to clear.</param>
+      <param name="options">Options that specify what content type to keep in the target rectangle.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.ClearContent(DevExpress.Pdf.PdfOrientedRectangle,System.Boolean)">
-      <summary />
-      <param name="rect"></param>
-      <param name="usePageCoordinateSystem"></param>
+      <summary>
+        <para>Clears the document content located in the specified rectangle. Allows you to specify whether to use the page coordinate system.</para>
+      </summary>
+      <param name="rect">A page rectangle to clear.</param>
+      <param name="usePageCoordinateSystem">true to use the page coordinate system; otherwise, false.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.ClearContent(DevExpress.Pdf.PdfOrientedRectangle,System.Boolean,DevExpress.Pdf.PdfClearContentOptions)">
-      <summary />
-      <param name="rect"></param>
-      <param name="usePageCoordinateSystem"></param>
-      <param name="options"></param>
+      <summary>
+        <para>Clears the document content located in the specified rectangle. Allows you to set whether to use the page coordinate system, and what content type to keep.</para>
+      </summary>
+      <param name="rect">A page rectangle to clear.</param>
+      <param name="usePageCoordinateSystem">true to use the page coordinate system; otherwise, false.</param>
+      <param name="options">Options that specify what content type to keep in the target rectangle.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.ClearContent(DevExpress.Pdf.PdfRectangle)">
-      <summary />
-      <param name="rect"></param>
+      <summary>
+        <para>Clears the document content in the specified rectangle.</para>
+      </summary>
+      <param name="rect">A page rectangle to clear.</param>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfPageFacade.ClearContent(DevExpress.Pdf.PdfRectangle,DevExpress.Pdf.PdfClearContentOptions)">
+      <summary>
+        <para>Clears the document content located in the specified rectangle. Allows you to specify what content type to keep.</para>
+      </summary>
+      <param name="rect">A page rectangle to clear.</param>
+      <param name="options">Options that specify what content type to keep in the target rectangle.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.ClearContent(DevExpress.Pdf.PdfRectangle,System.Boolean)">
-      <summary />
-      <param name="rect"></param>
-      <param name="usePageCoordinateSystem"></param>
+      <summary>
+        <para>Clears the document content located in the specified rectangle. Allows you to specify whether to use the page coordinate system.</para>
+      </summary>
+      <param name="rect">A page rectangle to clear.</param>
+      <param name="usePageCoordinateSystem">true to use the page coordinate system; otherwise, false.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.ClearContent(DevExpress.Pdf.PdfRectangle,System.Boolean,DevExpress.Pdf.PdfClearContentOptions)">
-      <summary />
-      <param name="rect"></param>
-      <param name="usePageCoordinateSystem"></param>
-      <param name="options"></param>
+      <summary>
+        <para>Clears the document content located in the specified rectangle. Allows you to specify whether to use the page coordinate system, and what content type to keep.</para>
+      </summary>
+      <param name="rect">A page rectangle to clear.</param>
+      <param name="usePageCoordinateSystem">true to use the page coordinate system; otherwise, false.</param>
+      <param name="options">An object that contains clear content options.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitBBoxDestination">
       <summary />
@@ -7637,24 +7684,24 @@
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.FlattenAnnotations">
       <summary>
-        <para>Flattens all annotations.</para>
+        <para>Flattens all page annotations.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.FlattenAnnotations(DevExpress.Pdf.PdfAnnotationType[])">
       <summary>
-        <para>Flattens all page annotations with the specified type.</para>
+        <para>Flattens all page annotations with the specified types.</para>
       </summary>
-      <param name="types">Indicates the annotation type.</param>
+      <param name="types">An array of annotation types.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.FlattenAnnotations(System.Func{DevExpress.Pdf.PdfAnnotationFacade,System.Boolean})">
       <summary>
-        <para>Flattens all annotations that meet the specified criteria.</para>
+        <para>Flattens all page annotations that meet the specified criteria.</para>
       </summary>
       <param name="predicate">Defines a set of criteria for the <see cref="T:DevExpress.Pdf.PdfAnnotationFacade"/> object.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.FlattenAnnotations(System.String[])">
       <summary>
-        <para>Flattens annotations with specified names.</para>
+        <para>Flattens page annotations with the specified names.</para>
       </summary>
       <param name="names">An array of annotation names.</param>
     </member>
@@ -8627,7 +8674,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfPolygonAnnotationFacade">
       <summary>
-        <para>Contains a set of properties used to manage polygon annotations without access to their inner structure.</para>
+        <para>Contains members used to manage polygon annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfPolygonAnnotationFacade.BorderStyle">
@@ -8638,7 +8685,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfPolyLineAnnotationFacade">
       <summary>
-        <para>Contains a set of properties used to manage polyline annotations without access to their inner structure.</para>
+        <para>Contains members used to manage polyline annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfPolyLineAnnotationFacade.BorderStyle">
@@ -9080,7 +9127,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfRubberStampAnnotationFacade">
       <summary>
-        <para>Contains a set of properties used to manage rubber stamp annotations without access to their inner structure.</para>
+        <para>Contains members used to manage rubber stamp annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfRubberStampAnnotationFacade.IconName">
@@ -9095,33 +9142,29 @@
       </summary>
       <value>true to keep aspect ratio; otherwise, false.</value>
     </member>
-    <member name="M:DevExpress.Pdf.PdfRubberStampAnnotationFacade.SetCustomIcon(System.String,System.IO.Stream)">
+    <member name="M:DevExpress.Pdf.PdfRubberStampAnnotationFacade.SetCustomIcon(System.IO.Stream)">
       <summary>
         <para>Creates a custom rubber stamp icon from a page in another document.</para>
       </summary>
-      <param name="iconName">The custom icon name.</param>
       <param name="pdfStream">A stream that contains a document used to generate a stamp.</param>
     </member>
-    <member name="M:DevExpress.Pdf.PdfRubberStampAnnotationFacade.SetCustomIcon(System.String,System.IO.Stream,System.Int32)">
+    <member name="M:DevExpress.Pdf.PdfRubberStampAnnotationFacade.SetCustomIcon(System.IO.Stream,System.Int32)">
       <summary>
         <para>Creates a custom rubber stamp icon from a page in another document.</para>
       </summary>
-      <param name="iconName">The custom icon name.</param>
       <param name="pdfStream">A stream that contains a document used to generate a stamp.</param>
       <param name="pageNumber">The target page number.</param>
     </member>
-    <member name="M:DevExpress.Pdf.PdfRubberStampAnnotationFacade.SetCustomIcon(System.String,System.String)">
+    <member name="M:DevExpress.Pdf.PdfRubberStampAnnotationFacade.SetCustomIcon(System.String)">
       <summary>
         <para>Creates a custom rubber stamp icon from a page in another document.</para>
       </summary>
-      <param name="iconName">The custom icon name.</param>
       <param name="pdfFileName">The name of a document (including full path) used to generate a stamp.</param>
     </member>
-    <member name="M:DevExpress.Pdf.PdfRubberStampAnnotationFacade.SetCustomIcon(System.String,System.String,System.Int32)">
+    <member name="M:DevExpress.Pdf.PdfRubberStampAnnotationFacade.SetCustomIcon(System.String,System.Int32)">
       <summary>
         <para>Creates a custom rubber stamp icon from a page in another document.</para>
       </summary>
-      <param name="iconName">The custom icon name.</param>
       <param name="pdfFileName">The name of a document (including a full path) used to generate a stamp.</param>
       <param name="pageNumber">The target page number.</param>
     </member>
@@ -9986,7 +10029,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfSquareAnnotationFacade">
       <summary>
-        <para>Exposes a set of properties used to organize square annotations without access to their inner structure.</para>
+        <para>Exposes members used to organize square annotations without access to their inner structure.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Pdf.PdfStringAlignment">
@@ -10194,7 +10237,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfTextAnnotationFacade">
       <summary>
-        <para>Contains a set of properties used to manage text annotations (sticky notes).</para>
+        <para>Contains members used to manage text annotations (sticky notes) without access to their inner structure.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfTextAnnotationFacade.IconName">
@@ -10512,7 +10555,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfTextMarkupAnnotationFacade">
       <summary>
-        <para>Contains a set of properties used to manage text markup annotations (text highlights).</para>
+        <para>Contains members used to manage text markup annotations (text highlights) without access to their inner structure.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfTextMarkupAnnotationFacade.MarkupType">
