@@ -1,4 +1,4 @@
-Imports Dashboard_FirstValueAggregate
+Imports FirstValueAggregate
 Imports DevExpress.Data.Filtering
 Imports System
 

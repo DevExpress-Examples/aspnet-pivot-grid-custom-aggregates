@@ -1,4 +1,4 @@
-﻿using Dashboard_FirstValueAggregate;
+﻿using FirstValueAggregate;
 using DevExpress.Data.Filtering;
 using System;
 

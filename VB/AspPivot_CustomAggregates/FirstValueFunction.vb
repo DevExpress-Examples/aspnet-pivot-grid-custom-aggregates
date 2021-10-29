@@ -2,7 +2,7 @@ Imports DevExpress.Data.Filtering
 Imports DevExpress.DataProcessing.Criteria
 Imports System
 
-Namespace Dashboard_FirstValueAggregate
+Namespace FirstValueAggregate
     Friend Class FirstValueAggregateFunction
         Implements ICustomAggregateFunction, ICustomFunctionOperatorBrowsable
         Public ReadOnly Property Name As String Implements ICustomFunctionOperator.Name
@@ -22,7 +22,7 @@ Namespace Dashboard_FirstValueAggregate
         End Property
         Public ReadOnly Property Description As String Implements ICustomFunctionOperatorBrowsable.Description
             Get
-            Return "Displays the first value of the field"
+                Return "Displays the first value of the field"
             End Get
         End Property
         Public ReadOnly Property Category As FunctionCategory Implements ICustomFunctionOperatorBrowsable.Category

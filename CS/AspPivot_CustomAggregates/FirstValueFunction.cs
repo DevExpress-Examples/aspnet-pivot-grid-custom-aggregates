@@ -2,7 +2,7 @@
 using DevExpress.DataProcessing.Criteria;
 using System;
 
-namespace Dashboard_FirstValueAggregate {
+namespace FirstValueAggregate {
     class FirstValueAggregateFunction : ICustomAggregateFunction, ICustomFunctionOperatorBrowsable {
         public string Name => "FirstValue";
 
