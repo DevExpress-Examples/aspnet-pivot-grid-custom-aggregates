@@ -4642,7 +4642,7 @@
     </member>
     <member name="F:DevExpress.XtraPivotGrid.Localization.PivotGridStringId.SummaryFilterApplyToSpecificLevel">
       <summary>
-        <para>The caption of a check box that enables end-users to select an aggregation level to which summary filtering should be applied.</para>
+        <para>The caption of a check box that enables end-users to select a detail level to which summary filtering should be applied.</para>
         <para>Default value: Apply to specific level</para>
       </summary>
     </member>
@@ -4654,7 +4654,7 @@
     </member>
     <member name="F:DevExpress.XtraPivotGrid.Localization.PivotGridStringId.SummaryFilterColumnField">
       <summary>
-        <para>The caption of a combo box used to select a column field that identifies an aggregation level to which summary filtering is applied.</para>
+        <para>The caption of a combo box used to select a column field that identifies a detail level to which summary filtering is applied.</para>
         <para>Default value: Column field:</para>
       </summary>
     </member>
@@ -4702,7 +4702,7 @@
     </member>
     <member name="F:DevExpress.XtraPivotGrid.Localization.PivotGridStringId.SummaryFilterRowField">
       <summary>
-        <para>The caption of a combo box used to select a row field that identifies an aggregation level to which summary filtering is applied.</para>
+        <para>The caption of a combo box used to select a row field that identifies a detail level to which summary filtering is applied.</para>
         <para>Default value: Row field:</para>
       </summary>
     </member>
@@ -5244,7 +5244,7 @@
     </member>
     <member name="F:DevExpress.XtraPivotGrid.PivotChartDataProvideMode.ProvideLastLevelData">
       <summary>
-        <para>PivotGrid passes only values from the lowest aggregation level.</para>
+        <para>PivotGrid passes only values from the lowest detail level.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPivotGrid.PivotChartDataProvideMode.UseCustomSettings">
@@ -6636,16 +6636,16 @@
     </member>
     <member name="M:DevExpress.XtraPivotGrid.PivotGridFieldBase.GetSummaryInterval">
       <summary>
-        <para>Returns information about the distribution of summary values that have been calculated against this field and belong to the lowest aggregation level.</para>
+        <para>Returns information about the distribution of summary values that have been calculated against this field and belong to the lowest detail level.</para>
       </summary>
       <returns>A <see cref="T:DevExpress.XtraPivotGrid.PivotSummaryInterval"/> object that contains information about the distribution of last-level summary values calculated against this field.</returns>
     </member>
     <member name="M:DevExpress.XtraPivotGrid.PivotGridFieldBase.GetSummaryInterval(DevExpress.XtraPivotGrid.PivotGridFieldBase,DevExpress.XtraPivotGrid.PivotGridFieldBase)">
       <summary>
-        <para>Returns information about the distribution of summary values that have been calculated against this field and belong to the specified aggregation level.</para>
+        <para>Returns information about the distribution of summary values that have been calculated against this field and belong to the specified detail level.</para>
       </summary>
-      <param name="rowField">A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> object that specifies a row field used to identify the aggregation level.</param>
-      <param name="columnField">A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> object that specifies a column field used to identify the aggregation level.</param>
+      <param name="rowField">A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> object that specifies a row field used to identify the detail level.</param>
+      <param name="columnField">A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> object that specifies a column field used to identify the detail level.</param>
       <returns>A <see cref="T:DevExpress.XtraPivotGrid.PivotSummaryInterval"/> object that contains information about the distribution of summary values calculated against this field.</returns>
     </member>
     <member name="M:DevExpress.XtraPivotGrid.PivotGridFieldBase.GetTotalOthersText">
@@ -6921,6 +6921,11 @@
       <param name="areaIndex">A zero-based integer that specifies the field’s index amongst the other fields displayed within the same area.</param>
       <returns>true if the field has been successfully moved to the specified position; otherwise, false.</returns>
     </member>
+    <member name="M:DevExpress.XtraPivotGrid.PivotGridFieldBase.SetOLAPFilterByUniqueName(DevExpress.Utils.DefaultBoolean)">
+      <summary />
+      <param name="newValue"></param>
+      <returns></returns>
+    </member>
     <member name="M:DevExpress.XtraPivotGrid.PivotGridFieldBase.SetSortBySummary(DevExpress.XtraPivotGrid.PivotGridFieldBase,System.Collections.Generic.List{DevExpress.XtraPivotGrid.PivotGridFieldSortCondition},System.Nullable{DevExpress.Data.PivotGrid.PivotSummaryType},System.Boolean)">
       <summary>
         <para>Sorts field values by another column’s/row’s values.</para>
@@ -6968,9 +6973,9 @@
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldBase.SortMode">
       <summary>
-        <para>Gets or sets how the field’s data is sorted when sorting is applied to it.</para>
+        <para>Gets or sets how the field’s data is sorted.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotSortMode"/> value that specifies how the field’s data is sorted in sort mode.</value>
+      <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotSortMode"/> value that specifies how the field’s data is sorted.</value>
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldBase.SortOrder">
       <summary>
@@ -8810,7 +8815,7 @@
       <summary>
         <para>Gets or sets whether the PivotGrid uses the OrderBy attribute obtained from the OLAP server to sort data.</para>
       </summary>
-      <value>True, to support the OLAP server’s OrderBy attribute; otherwise, false.</value>
+      <value>true, to support the OLAP server’s OrderBy attribute; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotGridOptionsOLAP.UseAggregateForSingleFilterValue">
       <summary>
@@ -10610,12 +10615,12 @@
     </member>
     <member name="M:DevExpress.XtraPivotGrid.PivotSummaryFilter.Apply(System.Object,System.Object,DevExpress.XtraPivotGrid.PivotGridFieldBase,DevExpress.XtraPivotGrid.PivotGridFieldBase)">
       <summary>
-        <para>Applies the summary filter with the specified range of values to be displayed. The filter is applied to cells that belong to the specified aggregation level.</para>
+        <para>Applies the summary filter with the specified range of values to be displayed. The filter is applied to cells that belong to the specified detail level.</para>
       </summary>
       <param name="startValue">The minimum value to be displayed. This value is assigned to the <see cref="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.StartValue"/> property.</param>
       <param name="endValue">The maximum value to be displayed. This value is assigned to the <see cref="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.EndValue"/> property.</param>
-      <param name="rowField">A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> descendant that specifies the row field used to identify the target aggregation level. This value is assigned to the <see cref="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.RowField"/> property.</param>
-      <param name="columnField">A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> descendant that specifies the column field used to identify the target aggregation level. This value is assigned to the <see cref="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.ColumnField"/> property.</param>
+      <param name="rowField">A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> descendant that specifies the row field used to identify the target detail level. This value is assigned to the <see cref="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.RowField"/> property.</param>
+      <param name="columnField">A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> descendant that specifies the column field used to identify the target detail level. This value is assigned to the <see cref="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.ColumnField"/> property.</param>
     </member>
     <member name="M:DevExpress.XtraPivotGrid.PivotSummaryFilter.Clear">
       <summary>
@@ -10624,9 +10629,9 @@
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.ColumnField">
       <summary>
-        <para>Gets or sets a column field used to identify an aggregation level to which the filtering is applied.</para>
+        <para>Gets or sets a column field used to identify a detail level to which the filtering is applied.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> descendant that specifies a column field used to identify an aggregation level to which the filtering is applied.</value>
+      <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> descendant that specifies a column field used to identify a detail levelto which the filtering is applied.</value>
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.ColumnFieldComponentName">
       <summary>
@@ -10648,15 +10653,15 @@
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.Mode">
       <summary>
-        <para>Gets or sets whether summary filtering should be applied to the last aggregation level or to the specified one.</para>
+        <para>Gets or sets whether summary filtering should be applied to the last detail level or to the specified one.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotSummaryFilterMode"/> enumeration member that specifies whether summary filtering should be applied to the last aggregation level or to the specified one.</value>
+      <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotSummaryFilterMode"/> enumeration member that specifies whether summary filtering should be applied to the last detail level or to the specified one.</value>
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.RowField">
       <summary>
-        <para>Gets or sets the row field used to identify an aggregation level to which the filtering is applied.</para>
+        <para>Gets or sets the row field used to identify a detail level to which the filtering is applied.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> descendant that specifies the row field used to identify an aggregation level to which the filtering is applied.</value>
+      <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotGridFieldBase"/> descendant that specifies the row field used to identify a detail level to which the filtering is applied.</value>
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.RowFieldComponentName">
       <summary>
@@ -10672,38 +10677,38 @@
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.Validity">
       <summary>
-        <para>Gets whether the specified value range and aggregation level are valid.</para>
+        <para>Gets whether the specified value range and detail level are valid.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotSummaryFilterValidity"/> enumeration member that defines whether the specified value range and aggregation level are valid.</value>
+      <value>A <see cref="T:DevExpress.XtraPivotGrid.PivotSummaryFilterValidity"/> enumeration member that defines whether the specified value range and detail level are valid.</value>
     </member>
     <member name="T:DevExpress.XtraPivotGrid.PivotSummaryFilterMode">
       <summary>
-        <para>Lists values that specify whether summary filtering should be applied to the last aggregation level or to the specified one.</para>
+        <para>Lists values that specify whether summary filtering should be applied to the last detail level or to the specified one.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPivotGrid.PivotSummaryFilterMode.LastLevel">
       <summary>
-        <para>Summary filtering is applied to cells that belong to the lowest aggregation level (the one identified by the innermost column and row fields).</para>
+        <para>Summary filtering is applied to cells that belong to the lowest detail level (the one identified by the innermost column and row fields).</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPivotGrid.PivotSummaryFilterMode.SpecificLevel">
       <summary>
-        <para>Summary filtering is applied to cells that belong to an aggregation level specified by an end-user or in code via the <see cref="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.ColumnField"/> and <see cref="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.RowField"/> properties.</para>
+        <para>Summary filtering is applied to cells that belong to a detail level specified by an end-user or in code via the <see cref="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.ColumnField"/> and <see cref="P:DevExpress.XtraPivotGrid.PivotSummaryFilter.RowField"/> properties.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraPivotGrid.PivotSummaryFilterValidity">
       <summary>
-        <para>Lists values that specify whether the specified value range and aggregation level are valid.</para>
+        <para>Lists values that specify whether the specified value range and detail level are valid.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPivotGrid.PivotSummaryFilterValidity.Invalid">
       <summary>
-        <para>The specified summary values range and target aggregation level are both invalid.</para>
+        <para>The specified summary values range and target detail level are both invalid.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPivotGrid.PivotSummaryFilterValidity.InvalidLevel">
       <summary>
-        <para>The specified target aggregation level is invalid.</para>
+        <para>The specified target detail level is invalid.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPivotGrid.PivotSummaryFilterValidity.InvalidRange">
@@ -10713,7 +10718,7 @@
     </member>
     <member name="F:DevExpress.XtraPivotGrid.PivotSummaryFilterValidity.Valid">
       <summary>
-        <para>The specified summary values range and target aggregation level are both valid.</para>
+        <para>The specified summary values range and target detail level are both valid.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraPivotGrid.PivotSummaryInterval">

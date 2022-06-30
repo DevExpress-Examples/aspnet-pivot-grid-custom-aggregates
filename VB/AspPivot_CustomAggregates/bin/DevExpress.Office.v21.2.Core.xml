@@ -20,6 +20,35 @@
       </summary>
       <value>true if the document export is Azure-compatible; otherwise false.</value>
     </member>
+    <member name="T:DevExpress.Office.BeforeEncodingDetectionEventArgs">
+      <summary>
+        <para>Provides data for the BeforeEncoding event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Office.BeforeEncodingDetectionEventArgs.#ctor(System.IO.Stream)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Office.BeforeEncodingDetectionEventArgs"/> class with specified settings.</para>
+      </summary>
+      <param name="stream">A stream with document data.</param>
+    </member>
+    <member name="P:DevExpress.Office.BeforeEncodingDetectionEventArgs.Encoding">
+      <summary>
+        <para>Gets or sets the document encoding.</para>
+      </summary>
+      <value>An enumeration value that indicates the document encoding type.</value>
+    </member>
+    <member name="P:DevExpress.Office.BeforeEncodingDetectionEventArgs.Handled">
+      <summary>
+        <para>Gets or sets whether the event is handled.</para>
+      </summary>
+      <value>true to handle the event; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Office.BeforeEncodingDetectionEventArgs.Stream">
+      <summary>
+        <para>Obtains a stream with document data.</para>
+      </summary>
+      <value>A stream with document data.</value>
+    </member>
     <member name="T:DevExpress.Office.DocumentLayoutUnit">
       <summary>
         <para>Lists measurement units used for the document layout.</para>
@@ -137,6 +166,102 @@
         <para>Gets or sets the URI of the document being exported.</para>
       </summary>
       <value>A string representing the document URI.</value>
+    </member>
+    <member name="T:DevExpress.Office.FontData">
+      <summary>
+        <para>Contains information about a font in <see cref="T:DevExpress.Office.FontRepository"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Office.FontData.#ctor(System.String,System.String,System.Int32,System.Boolean,System.Boolean)">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Office.FontData"/> class instance with specified settings.</para>
+      </summary>
+      <param name="filePath">The path to the font file.</param>
+      <param name="name">The font name.</param>
+      <param name="ttcIndex">A zero-based index of the font within the TTC file.</param>
+      <param name="bold">true if the font is bold; otherwise, false.</param>
+      <param name="italic">true if the font style is italic; otherwise, false.</param>
+    </member>
+    <member name="P:DevExpress.Office.FontData.Bold">
+      <summary>
+        <para>Indicates whether the font is bold.</para>
+      </summary>
+      <value>true if the font is bold; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Office.FontData.FilePath">
+      <summary>
+        <para>Returns the path to the font file (if the font is loaded from a file).</para>
+      </summary>
+      <value>The path to the font file. Null (Nothing in Visual Basic) if the font is loaded from a stream or byte array.</value>
+    </member>
+    <member name="P:DevExpress.Office.FontData.Italic">
+      <summary>
+        <para>Indicates whether the font style is italic.</para>
+      </summary>
+      <value>true if the font style is italic; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Office.FontData.Name">
+      <summary>
+        <para>Returns the font name (including the Font Family and Font Subfamily names).</para>
+      </summary>
+      <value>The font name.</value>
+    </member>
+    <member name="P:DevExpress.Office.FontData.TtcIndex">
+      <summary>
+        <para>Returns the font index in the TrueType Collection (TTC) file.</para>
+      </summary>
+      <value>A zero-based index of the font within the collection.</value>
+    </member>
+    <member name="T:DevExpress.Office.FontRepository">
+      <summary>
+        <para>A repository of user-defined fonts.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Office.FontRepository.AddFont(System.Byte[])">
+      <summary>
+        <para>Loads a font from a byte array.</para>
+      </summary>
+      <param name="fontData">A byte array that contains font data.</param>
+    </member>
+    <member name="M:DevExpress.Office.FontRepository.AddFont(System.IO.Stream)">
+      <summary>
+        <para>Loads a font from a stream.</para>
+      </summary>
+      <param name="fontStream">A stream from which to load the font.</param>
+    </member>
+    <member name="M:DevExpress.Office.FontRepository.AddFont(System.String)">
+      <summary>
+        <para>Loads a font from a file.</para>
+      </summary>
+      <param name="fontFileName">The full path to the font file.</param>
+    </member>
+    <member name="M:DevExpress.Office.FontRepository.Clear">
+      <summary>
+        <para>Removes all fonts from the font repository.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Office.FontRepository.Dispose">
+      <summary>
+        <para>Releases resources associated with the <see cref="T:DevExpress.Office.FontRepository"/> instance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Office.FontRepository.GetFonts">
+      <summary>
+        <para>Returns a list of all fonts in <see cref="T:DevExpress.Office.FontRepository"/>.</para>
+      </summary>
+      <returns>A list of <see cref="T:DevExpress.Office.FontData"/> objects that contain information about fonts in the repository.</returns>
+    </member>
+    <member name="P:DevExpress.Office.FontRepository.Instance">
+      <summary>
+        <para>Returns an instance of the <see cref="T:DevExpress.Office.FontRepository"/> class.</para>
+      </summary>
+      <value>The <see cref="T:DevExpress.Office.FontRepository"/> class instance.</value>
+    </member>
+    <member name="P:DevExpress.Office.FontRepository.IsEmpty">
+      <summary>
+        <para>Indicates whether the font repository is empty.</para>
+      </summary>
+      <value>true if the font repository contains no fonts; otherwise, false.</value>
     </member>
     <member name="T:DevExpress.Office.HyperlinkUriHelper">
       <summary>

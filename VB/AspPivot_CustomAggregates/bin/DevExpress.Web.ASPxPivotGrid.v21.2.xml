@@ -3005,12 +3005,6 @@
         <para>Contains the settings that define images displayed in Customization Forms and <see cref="T:DevExpress.Web.ASPxPivotGrid.ASPxPivotCustomizationControl"/> controls.</para>
       </summary>
     </member>
-    <member name="M:DevExpress.Web.ASPxPivotGrid.PivotCustomizationFormImages.#ctor(DevExpress.Web.Internal.ISkinOwner)">
-      <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxPivotGrid.PivotCustomizationFormImages"/> class.</para>
-      </summary>
-      <param name="owner">An object that implements the DevExpress.Web.Internal.ISkinOwner interface, representing the pivot grid or pivot customization control that owns the images.</param>
-    </member>
     <member name="P:DevExpress.Web.ASPxPivotGrid.PivotCustomizationFormImages.BottomPanelOnly1by4Layout">
       <summary>
         <para>Gets the settings that define the image displayed within the ‘Areas Section Only (1 by 4)’ item of the Customization Form Layout context menu.</para>

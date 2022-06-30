@@ -3633,6 +3633,377 @@
       </summary>
       <value>An <see cref="T:DevExpress.Export.Xl.XlBorderLineStyle"/> enumeration member that specifies the border line style.</value>
     </member>
+    <member name="T:DevExpress.Export.Xl.XlBuiltInTableStyleId">
+      <summary>
+        <para>Lists built-in styles similar to Excel’s built-in table styles.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Dark1">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Dark10">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Dark11">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Dark2">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Dark3">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Dark4">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Dark5">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Dark6">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Dark7">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Dark8">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Dark9">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light1">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light10">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light11">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light12">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light13">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light14">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light15">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light16">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light17">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light18">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light19">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light2">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light20">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light21">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light3">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light4">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light5">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light6">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light7">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light8">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Light9">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium1">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium10">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium11">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium12">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium13">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium14">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium15">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium16">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium17">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium18">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium19">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium2">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium20">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium21">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium22">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium23">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium24">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium25">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium26">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium27">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium28">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium3">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium4">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium5">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium6">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium7">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium8">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.Medium9">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Export.Xl.XlBuiltInTableStyleId.None">
+      <summary>
+        <para>No table style is specified.</para>
+      </summary>
+      <value></value>
+    </member>
     <member name="T:DevExpress.Export.Xl.XlCalendarType">
       <summary>
         <para>Lists calendar types used to interpret filter values defined by the <see cref="T:DevExpress.Export.Xl.XlDateGroupItem"/> instances.</para>
@@ -16574,6 +16945,9 @@
       <param name="skipEmptyRows">true to include the empty rows into the resulting CSV file; otherwise false. This value is assigned to the <see cref="P:DevExpress.XtraPrinting.CsvExportOptions.SkipEmptyRows"/> property.</param>
       <param name="skipEmptyColumns">true to include the empty columns into the resulting CSV file; otherwise false. This value is assigned to the <see cref="P:DevExpress.XtraPrinting.CsvExportOptions.SkipEmptyColumns"/> property.</param>
     </member>
+    <member name="E:DevExpress.XtraPrinting.CsvExportOptionsEx.BeforeExportRow">
+      <summary />
+    </member>
     <member name="E:DevExpress.XtraPrinting.CsvExportOptionsEx.CustomizeCell">
       <summary>
         <para>Allows you to substitute a cell value in the output document. Only available in data-aware export mode.</para>
@@ -17740,18 +18114,6 @@
         <para>Gets or sets the width of the brick.</para>
       </summary>
       <value>An integer value representing the width of the brick.</value>
-    </member>
-    <member name="T:DevExpress.XtraPrinting.Export.EmailSenderBase">
-      <summary>
-        <para>Provides the basic functionality for sending documents via e-mail.</para>
-      </summary>
-    </member>
-    <member name="M:DevExpress.XtraPrinting.Export.EmailSenderBase.Send(System.String[],DevExpress.XtraPrinting.EmailOptions)">
-      <summary>
-        <para>Sends the document(s) to the specified recipient via e-mail.</para>
-      </summary>
-      <param name="files">An array of <see cref="T:System.String"/> values specifying the file names for the documents embedded into the e-mail.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.EmailOptions"/> object storing the e-mail options.</param>
     </member>
     <member name="T:DevExpress.XtraPrinting.Export.ITableCell">
       <summary>
@@ -19089,7 +19451,7 @@
     </member>
     <member name="F:DevExpress.XtraPrinting.ImageExportOptions.ImageFormats">
       <summary>
-        <para>Lists the available image formats (“.bmp”, “.gif”, “.jpg”, “.png”, “.emf”, “.wmf”, “.tiff”).</para>
+        <para>For internal use.</para>
       </summary>
       <value></value>
     </member>
@@ -20542,7 +20904,7 @@
     </member>
     <member name="T:DevExpress.XtraPrinting.PageInfoDataProviderBase">
       <summary>
-        <para>A service enabling the <see cref="T:DevExpress.XtraReports.UI.XRPageInfo"/> control to display custom information (e.g., the name of a logged user instead of a user under whose account the web server is running).</para>
+        <para>A service that allows the XRPageInfo control to display custom information.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraPrinting.PageInfoDataProviderBase.GetText(DevExpress.XtraPrinting.PrintingSystemBase,DevExpress.XtraPrinting.PageInfoTextBrickBase)">
@@ -24226,6 +24588,10 @@
       </summary>
       <value>A <see cref="T:System.String"/> value, specifying the data source serializer name.</value>
     </member>
+    <member name="P:DevExpress.XtraPrinting.WebClientUIControl.DataContracts.DataSourceInfo.HasErrors">
+      <summary />
+      <value></value>
+    </member>
     <member name="P:DevExpress.XtraPrinting.WebClientUIControl.DataContracts.DataSourceInfo.HasParameters">
       <summary />
       <value></value>
@@ -24685,7 +25051,7 @@
     </member>
     <member name="P:DevExpress.XtraPrinting.XlsExportOptionsEx.AllowGrouping">
       <summary>
-        <para>Gets or sets whether data groups are exported from the source control to the output document.Only available in data-aware export mode.</para>
+        <para>Gets or sets whether data groups are exported from the source control to the output document. Only available in data-aware export mode.</para>
       </summary>
       <value>A value that specifies whether data groups are exported from the source control to the output document.</value>
     </member>
@@ -24731,6 +25097,9 @@ The DefaultBoolean.Default value is equivalent to True.</value>
         <para>Gets or sets how bands and columns are arranged in the output worksheet (when exporting from Banded Views).Only available in data-aware export mode.</para>
       </summary>
       <value>A value that identifies the current layout of bands and columns in the output worksheet.</value>
+    </member>
+    <member name="E:DevExpress.XtraPrinting.XlsExportOptionsEx.BeforeExportRow">
+      <summary />
     </member>
     <member name="E:DevExpress.XtraPrinting.XlsExportOptionsEx.BeforeExportTable">
       <summary>
@@ -25084,6 +25453,9 @@ The DefaultBoolean.Default value is equivalent to True.</value>
         <para>Gets or sets how bands and columns are arranged in the output worksheet (when exporting from Banded Views).Only available in data-aware export mode.</para>
       </summary>
       <value>A value that identifies the current layout of bands and columns in the output worksheet.</value>
+    </member>
+    <member name="E:DevExpress.XtraPrinting.XlsxExportOptionsEx.BeforeExportRow">
+      <summary />
     </member>
     <member name="E:DevExpress.XtraPrinting.XlsxExportOptionsEx.BeforeExportTable">
       <summary>
@@ -25997,11 +26369,18 @@ The DefaultBoolean.Default value is equivalent to True.</value>
     <member name="T:DevExpress.XtraReports.Expressions.Native.ParameterExpressionEditorDescriptor">
       <summary />
     </member>
-    <member name="M:DevExpress.XtraReports.Expressions.Native.ParameterExpressionEditorDescriptor.#ctor(System.Object)">
+    <member name="M:DevExpress.XtraReports.Expressions.Native.ParameterExpressionEditorDescriptor.#ctor(DevExpress.Data.IParameter)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.XtraReports.Expressions.Native.ParameterExpressionEditorDescriptor"/> class with specified settings.</para>
       </summary>
       <param name="parameter"></param>
+    </member>
+    <member name="M:DevExpress.XtraReports.Expressions.Native.ParameterExpressionEditorDescriptor.#ctor(DevExpress.Data.IParameter,System.Collections.Generic.IEnumerable{DevExpress.Data.IParameter})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraReports.Expressions.Native.ParameterExpressionEditorDescriptor"/> class with specified settings.</para>
+      </summary>
+      <param name="parameter"></param>
+      <param name="parameters"></param>
     </member>
     <member name="T:DevExpress.XtraReports.IDocumentModifier">
       <summary>
@@ -26166,187 +26545,259 @@ The DefaultBoolean.Default value is equivalent to True.</value>
       <value>A <see cref="T:System.String"/> value.</value>
     </member>
     <member name="T:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder">
-      <summary />
+      <summary>
+        <para>Contains methods that allow you to create and customize a parameter group.</para>
+      </summary>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.AddGroupItem(System.Action{DevExpress.XtraReports.Parameters.GroupItemFluentBuilder})">
-      <summary />
-      <param name="configuration"></param>
-      <returns></returns>
+      <summary>
+        <para>Creates a group.</para>
+      </summary>
+      <param name="configuration">An action that customizes the group.</param>
+      <returns>A builder, so you can chain additional methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.AddParameterItem(DevExpress.XtraReports.Parameters.Parameter,System.Action{DevExpress.XtraReports.Parameters.ParameterItemFluentBuilder})">
-      <summary />
-      <param name="parameter"></param>
-      <param name="configuration"></param>
-      <returns></returns>
+      <summary>
+        <para>Adds a report parameter editor to the UI. Accepts a report parameter object.</para>
+      </summary>
+      <param name="parameter">A report parameter object.</param>
+      <param name="configuration">An action that customizes the report parameter editor.</param>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.AddParameterItem(System.String,System.Action{DevExpress.XtraReports.Parameters.ParameterItemFluentBuilder})">
-      <summary />
-      <param name="parameterName"></param>
-      <param name="configuration"></param>
-      <returns></returns>
+      <summary>
+        <para>Adds a report parameter editor to the UI. Accepts a report parameter name.</para>
+      </summary>
+      <param name="parameterName">A report parameter name.</param>
+      <param name="configuration">An action that customizes the report parameter editor.</param>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.AddSeparatorItem">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Creates a separator.</para>
+      </summary>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.BeginGroupItem(System.String)">
-      <summary />
-      <param name="title"></param>
-      <returns></returns>
+      <summary>
+        <para>Creates a group, sets its title, and begins group customization.</para>
+      </summary>
+      <param name="title">A group title.</param>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.BeginParameterItem(DevExpress.XtraReports.Parameters.Parameter,DevExpress.XtraReports.Parameters.Orientation)">
-      <summary />
-      <param name="parameter"></param>
-      <param name="labelOrientation"></param>
-      <returns></returns>
+      <summary>
+        <para>Adds a parameter editor to the UI and begins editor customization. Accepts a report parameter object.</para>
+      </summary>
+      <param name="parameter">A report parameter object.</param>
+      <param name="labelOrientation">Specifies label location relative to the editor.</param>
+      <returns>A parameter builder, so you can chain additional methods that customize the parameter editor.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.BeginParameterItem(System.String,DevExpress.XtraReports.Parameters.Orientation)">
-      <summary />
-      <param name="parameterName"></param>
-      <param name="labelOrientation"></param>
-      <returns></returns>
+      <summary>
+        <para>Adds a parameter editor to the UI and begins editor customization. Accepts a report parameter name.</para>
+      </summary>
+      <param name="parameterName">A parameter name.</param>
+      <param name="labelOrientation">Specifies label location relative to the editor.</param>
+      <returns>A parameter builder, so you can chain additional methods that customize the parameter editor.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.BeginSeparatorItem">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Creates a separator.</para>
+      </summary>
+      <returns>A separator builder.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.End">
-      <summary />
+      <summary>
+        <para>Ends Parameters panel customization.</para>
+      </summary>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.EndGroupItem">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Ends group customization.</para>
+      </summary>
+      <returns>A builder, so you can chain additional methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetGroupItem(DevExpress.XtraReports.Parameters.Parameter)">
-      <summary />
-      <param name="parameter"></param>
-      <returns></returns>
+      <summary>
+        <para>Returns a builder for a group that contains the specified parameter.</para>
+      </summary>
+      <param name="parameter">A report parameter object.</param>
+      <returns>A group builder, so you can chain methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetGroupItem(DevExpress.XtraReports.Parameters.Parameter,System.Action{DevExpress.XtraReports.Parameters.GroupItemFluentBuilder})">
-      <summary />
-      <param name="parameter"></param>
-      <param name="configuration"></param>
-      <returns></returns>
+      <summary>
+        <para>Returns a builder for a group that contains the specified parameter. Applies a customization action to the group.</para>
+      </summary>
+      <param name="parameter">A report parameter object.</param>
+      <param name="configuration">A customization action.</param>
+      <returns>A group builder, so you can chain methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetGroupItem(System.Int32)">
-      <summary />
-      <param name="index"></param>
-      <returns></returns>
+      <summary>
+        <para>Returns a group builder by index.</para>
+      </summary>
+      <param name="index">A group index.</param>
+      <returns>A group builder, so you can chain methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetGroupItem(System.Int32,System.Action{DevExpress.XtraReports.Parameters.GroupItemFluentBuilder})">
-      <summary />
-      <param name="index"></param>
-      <param name="configuration"></param>
-      <returns></returns>
+      <summary>
+        <para>Returns a group builder by index. Applies a customization action to the group.</para>
+      </summary>
+      <param name="index">A group index.</param>
+      <param name="configuration">A customization action.</param>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetGroupItem(System.String)">
-      <summary />
-      <param name="parameterName"></param>
-      <returns></returns>
+      <summary>
+        <para>Returns a builder for a group that contains a parameter with the specified name.</para>
+      </summary>
+      <param name="parameterName">A parameter name.</param>
+      <returns>A group builder, so you can chain methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetGroupItem(System.String,System.Action{DevExpress.XtraReports.Parameters.GroupItemFluentBuilder})">
-      <summary />
-      <param name="parameterName"></param>
-      <param name="configuration"></param>
-      <returns></returns>
+      <summary>
+        <para>Returns a builder for a group that contains a parameter with the specified name. Applies a customization action to the group.</para>
+      </summary>
+      <param name="parameterName">A parameter name.</param>
+      <param name="configuration">A customization action.</param>
+      <returns>A group builder, so you can chain methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetParameterItem(DevExpress.XtraReports.Parameters.Parameter)">
-      <summary />
-      <param name="parameter"></param>
-      <returns></returns>
+      <summary>
+        <para>Returns a parameter builder. Accepts a report parameter object.</para>
+      </summary>
+      <param name="parameter">A report parameter object.</param>
+      <returns>A parameter builder, so you chain methods that customize the parameter editor.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetParameterItem(DevExpress.XtraReports.Parameters.Parameter,System.Action{DevExpress.XtraReports.Parameters.ParameterItemFluentBuilder})">
-      <summary />
-      <param name="parameter"></param>
-      <param name="configuration"></param>
-      <returns></returns>
+      <summary>
+        <para>Applies a customization action to the specified parameter.</para>
+      </summary>
+      <param name="parameter">A report parameter object.</param>
+      <param name="configuration">A customization action.</param>
+      <returns>A builder, so you chain additional methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetParameterItem(System.Int32)">
-      <summary />
-      <param name="index"></param>
-      <returns></returns>
+      <summary>
+        <para>Returns a parameter builder by index.</para>
+      </summary>
+      <param name="index">A parameter index.</param>
+      <returns>A parameter builder, so you chain methods that customize the parameter editor.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetParameterItem(System.Int32,System.Action{DevExpress.XtraReports.Parameters.ParameterItemFluentBuilder})">
-      <summary />
-      <param name="index"></param>
-      <param name="configuration"></param>
-      <returns></returns>
+      <summary>
+        <para>Applies a customization action to the parameter with the specified index.</para>
+      </summary>
+      <param name="index">A parameter index.</param>
+      <param name="configuration">A customization action.</param>
+      <returns>A builder, so you chain additional methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetParameterItem(System.String)">
-      <summary />
-      <param name="parameterName"></param>
-      <returns></returns>
+      <summary>
+        <para>Returns a parameter builder. Accepts a parameter name.</para>
+      </summary>
+      <param name="parameterName">A parameter name.</param>
+      <returns>A parameter builder, so you chain methods that customize the parameter editor.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.GetParameterItem(System.String,System.Action{DevExpress.XtraReports.Parameters.ParameterItemFluentBuilder})">
-      <summary />
-      <param name="parameterName"></param>
-      <param name="configuration"></param>
-      <returns></returns>
+      <summary>
+        <para>Applies a customization action to the parameter with the specified name.</para>
+      </summary>
+      <param name="parameterName">A parameter name.</param>
+      <param name="configuration">A customization action.</param>
+      <returns>A builder, so you chain additional methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.RemoveGroupItem(DevExpress.XtraReports.Parameters.Parameter)">
-      <summary />
-      <param name="parameter"></param>
-      <returns></returns>
+      <summary>
+        <para>Removes a group that contains the specified parameter.</para>
+      </summary>
+      <param name="parameter">A report parameter object.</param>
+      <returns>A builder, so you chain methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.RemoveGroupItem(System.Int32)">
-      <summary />
-      <param name="index"></param>
-      <returns></returns>
+      <summary>
+        <para>Removes a group by index.</para>
+      </summary>
+      <param name="index">A group index.</param>
+      <returns>A builder, so you chain methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.RemoveGroupItem(System.String)">
-      <summary />
-      <param name="parameterName"></param>
-      <returns></returns>
+      <summary>
+        <para>Removes a group that contains a parameter with the specified name.</para>
+      </summary>
+      <param name="parameterName">A parameter name.</param>
+      <returns>A builder, so you chain additional methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.RemoveParameterItem(DevExpress.XtraReports.Parameters.Parameter)">
-      <summary />
-      <param name="parameter"></param>
-      <returns></returns>
+      <summary>
+        <para>Removes a parameter editor from the UI. Accepts a parameter object.</para>
+      </summary>
+      <param name="parameter">A report parameter object.</param>
+      <returns>A builder, so you chain methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.RemoveParameterItem(System.Int32)">
-      <summary />
-      <param name="index"></param>
-      <returns></returns>
+      <summary>
+        <para>Removes a parameter editor from the UI.</para>
+      </summary>
+      <param name="index">A parameter index.</param>
+      <returns>A builder, so you chain methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.RemoveParameterItem(System.String)">
-      <summary />
-      <param name="parameterName"></param>
-      <returns></returns>
+      <summary>
+        <para>Removes a parameter editor from the UI. Accepts a parameter name.</para>
+      </summary>
+      <param name="parameterName">A parameter name.</param>
+      <returns>A builder, so you chain methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.RemoveSeparatorItem(System.Int32)">
-      <summary />
-      <param name="index"></param>
-      <returns></returns>
+      <summary>
+        <para>Removes a separator.</para>
+      </summary>
+      <param name="index">A separator index.</param>
+      <returns>A builder, so you chain methods that customize the panel.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.WithBorderVisible(System.Boolean)">
-      <summary />
-      <param name="borderVisible"></param>
-      <returns></returns>
+      <summary>
+        <para>Specifies whether group borders are visible.</para>
+      </summary>
+      <param name="borderVisible">true, to make group borders visible; otherwise, false.</param>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.WithExpanded(System.Boolean)">
-      <summary />
-      <param name="expanded"></param>
-      <returns></returns>
+      <summary>
+        <para>Specifies whether a group is expanded or collapsed.</para>
+      </summary>
+      <param name="expanded">true, to expand the group; otherwise, false.</param>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.WithOrientation(DevExpress.XtraReports.Parameters.Orientation)">
-      <summary />
-      <param name="orientation"></param>
-      <returns></returns>
+      <summary>
+        <para>Specifies whether group parameters are placed vertically or horizontally.</para>
+      </summary>
+      <param name="orientation">The orientation type.</param>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.WithShowExpandButton(System.Boolean)">
-      <summary />
-      <param name="showExpandButton"></param>
-      <returns></returns>
+      <summary>
+        <para>Specifies whether to show the group’s expand/collapse button.</para>
+      </summary>
+      <param name="showExpandButton">true, to show the button; otherwise, false.</param>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.WithTitle(System.String)">
-      <summary />
-      <param name="title"></param>
-      <returns></returns>
+      <summary>
+        <para>Specifies a group title.</para>
+      </summary>
+      <param name="title">A group title.</param>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.GroupItemFluentBuilder.WithTitleVisible(System.Boolean)">
-      <summary />
-      <param name="titleVisible"></param>
-      <returns></returns>
+      <summary>
+        <para>Specifies whether a group title is visible.</para>
+      </summary>
+      <param name="titleVisible">true, to make the title visible; otherwise, false.</param>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="T:DevExpress.XtraReports.Parameters.IParameterEditorValueProvider">
       <summary>
@@ -26495,17 +26946,23 @@ The DefaultBoolean.Default value is equivalent to True.</value>
       <param name="values">An array of <see cref="T:DevExpress.XtraReports.Parameters.LookUpValue"/> objects to append to the collection.</param>
     </member>
     <member name="T:DevExpress.XtraReports.Parameters.Orientation">
-      <summary />
+      <summary>
+        <para>Lists orientation types for a report parameter and group.</para>
+      </summary>
     </member>
     <member name="F:DevExpress.XtraReports.Parameters.Orientation.Horizontal">
-      <summary />
+      <summary>
+        <para>Places elements horizontally.</para>
+      </summary>
     </member>
     <member name="F:DevExpress.XtraReports.Parameters.Orientation.Vertical">
-      <summary />
+      <summary>
+        <para>Places elements vertically.</para>
+      </summary>
     </member>
     <member name="T:DevExpress.XtraReports.Parameters.Parameter">
       <summary>
-        <para>Provides functionality to a report parameter.</para>
+        <para>A report parameter.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.Parameter.#ctor">
@@ -26515,19 +26972,21 @@ The DefaultBoolean.Default value is equivalent to True.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.AllowNull">
       <summary>
-        <para>Indicates whether the parameter‘s value can be unspecified.</para>
+        <para>Specifies whether a parameter value can be empty.</para>
       </summary>
-      <value>true, to allow the parameter to be unspecified; otherwise, false.</value>
+      <value>true, to allow an empty value; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.Description">
       <summary>
-        <para>Specifies a description that identifies a parameter editor in the Parameters UI.</para>
+        <para>Specifies a parameter description. This description is displayed beside a parameter editor in the Parameters panel.</para>
       </summary>
-      <value>A <see cref="T:System.String"/> that is the parameter description.</value>
+      <value>A parameter description.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.Enabled">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Specifies whether a parameter editor is enabled or disabled in the Parameters panel.</para>
+      </summary>
+      <value>true, to enable a parameter editor; otherwise; false.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.ExpressionBindings">
       <summary>
@@ -26543,15 +27002,15 @@ The DefaultBoolean.Default value is equivalent to True.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.MultiValue">
       <summary>
-        <para>Specifies whether or not a parameter can have multiple values.</para>
+        <para>Specifies whether you and end users can pass multiple values to a report parameter.</para>
       </summary>
-      <value>true if a parameter can have multiple values; otherwise false.</value>
+      <value>true to make a parameter multivalue; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.Name">
       <summary>
-        <para>Specifies the parameter name.</para>
+        <para>Specifies a name by which you can reference a parameter in a report.</para>
       </summary>
-      <value>A <see cref="T:System.String"/> that specifies the parameter name.</value>
+      <value>A parameter name.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.ObjectType">
       <summary>
@@ -26573,9 +27032,9 @@ The DefaultBoolean.Default value is equivalent to True.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.SelectAllValues">
       <summary>
-        <para>Gets or sets whether to assign the multi-value parameter‘s all predefined values to the <see cref="P:DevExpress.XtraReports.Parameters.Parameter.Value"/> property.</para>
+        <para>Specifies whether to use all values of a multivalue parameter as defaults.</para>
       </summary>
-      <value>true, to assign the multi-value parameter’s all predefined values to the Value property; otherwise, false.</value>
+      <value>true to use all values as defaults; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.Tag">
       <summary>
@@ -26585,15 +27044,15 @@ The DefaultBoolean.Default value is equivalent to True.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.Type">
       <summary>
-        <para>Determines which values a report parameter can accept.</para>
+        <para>Specifies a parameter type.</para>
       </summary>
-      <value>A <see cref="T:System.Type"/> object that specifies the type declarations. The default type is <see cref="T:System.String"/>.</value>
+      <value>A parameter type.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.Value">
       <summary>
-        <para>Specifies the report parameter‘s value.</para>
+        <para>Specifies a parameter value.</para>
       </summary>
-      <value>The parameter’s value.</value>
+      <value>A parameter value.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.ValueInfo">
       <summary>
@@ -26603,15 +27062,15 @@ The DefaultBoolean.Default value is equivalent to True.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.ValueSourceSettings">
       <summary>
-        <para>Provides access to the settings that are used to generate the parameter’s predefined values.</para>
+        <para>Gets or sets settings used to generate predefined values for a report parameter.</para>
       </summary>
-      <value>The settings used to generate the parameter’s predefined values.</value>
+      <value>Settings used to generate predefined values for a report parameter.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Parameters.Parameter.Visible">
       <summary>
-        <para>Specifies whether a parameter‘s editor should be displayed in the Parameters UI, which is invoked for an end-user if the <see cref="P:DevExpress.XtraReports.UI.XtraReport.RequestParameters"/> property is enabled.</para>
+        <para>Specifies whether a parameter editor is visible in the Parameters panel.</para>
       </summary>
-      <value>true to display the parameter’s editor; otherwise, false.</value>
+      <value>true to show a parameter editor; otherwise, false.</value>
     </member>
     <member name="T:DevExpress.XtraReports.Parameters.ParameterCollection">
       <summary>
@@ -26675,26 +27134,38 @@ The DefaultBoolean.Default value is equivalent to True.</value>
       <value>A <see cref="T:DevExpress.XtraReports.Parameters.Parameter"/> object.</value>
     </member>
     <member name="T:DevExpress.XtraReports.Parameters.ParameterItemFluentBuilder">
-      <summary />
+      <summary>
+        <para>Contains methods that allow you to customize a parameter layout.</para>
+      </summary>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.ParameterItemFluentBuilder.EndParameterItem">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Ends parameter editor customization.</para>
+      </summary>
+      <returns>A group builder, so you can chain additional methods that customize the group.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.ParameterItemFluentBuilder.WithLabelOrientation(DevExpress.XtraReports.Parameters.Orientation)">
-      <summary />
-      <param name="labelOrientation"></param>
-      <returns></returns>
+      <summary>
+        <para>Specifies whether a parameter name and editor should be placed vertically or horizontally.</para>
+      </summary>
+      <param name="labelOrientation">The orientation type.</param>
+      <returns>A parameter builder, so you can chain additional methods that customize the parameter.</returns>
     </member>
     <member name="T:DevExpress.XtraReports.Parameters.ParameterPanelFluentBuilderBase">
-      <summary />
+      <summary>
+        <para>The base class for <see cref="T:DevExpress.XtraReports.Parameters.ParameterPanelFluentBuilder"/>.</para>
+      </summary>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.ParameterPanelFluentBuilderBase.ClearItems">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Discards all customization actions applied to the Parameters panel.</para>
+      </summary>
+      <returns>The base class for <see cref="T:DevExpress.XtraReports.Parameters.ParameterPanelFluentBuilder"/>.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.ParameterPanelFluentBuilderBase.End">
-      <summary />
+      <summary>
+        <para>Ends Parameters panel customization.</para>
+      </summary>
     </member>
     <member name="T:DevExpress.XtraReports.Parameters.ParametersRequestEventArgs">
       <summary>
@@ -26903,11 +27374,15 @@ The DefaultBoolean.Default value is equivalent to True.</value>
       </summary>
     </member>
     <member name="T:DevExpress.XtraReports.Parameters.SeparatorItemFluentBuilder">
-      <summary />
+      <summary>
+        <para>Contains methods that allow you to add a separator between parameters and groups.</para>
+      </summary>
     </member>
     <member name="M:DevExpress.XtraReports.Parameters.SeparatorItemFluentBuilder.EndSeparatorItem">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Ends separator customization.</para>
+      </summary>
+      <returns>A group builder, so you can chain additional methods that customize the panel.</returns>
     </member>
     <member name="T:DevExpress.XtraReports.Parameters.StaticListLookUpSettings">
       <summary>
@@ -27289,6 +27764,13 @@ The DefaultBoolean.Default value is equivalent to True.</value>
       <param name="val">An integer value.</param>
       <param name="dpi">A <see cref="T:System.Single"/> value, specifying the initial DPI setting.</param>
       <returns>An integer value.</returns>
+    </member>
+    <member name="M:DevExpress.XtraReports.UI.XRConvert.ConvertMargins(DevExpress.XtraPrinting.Drawing.MarginsFloat,System.Single,System.Single)">
+      <summary />
+      <param name="val"></param>
+      <param name="fromDpi"></param>
+      <param name="toDpi"></param>
+      <returns></returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XRConvert.ConvertMargins(System.Drawing.Printing.Margins,System.Single,System.Single)">
       <summary>

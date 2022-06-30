@@ -1039,6 +1039,9 @@
         <para>The expression element is an operator.</para>
       </summary>
     </member>
+    <member name="F:DevExpress.Data.Controls.ExpressionEditor.ExpressionElementKind.Parenthesis">
+      <summary />
+    </member>
     <member name="T:DevExpress.Data.Controls.ExpressionEditor.FunctionInfo">
       <summary>
         <para>Provides information about a function listed in the Expression Editor.</para>
@@ -3069,7 +3072,8 @@
     <member name="F:DevExpress.Data.Filtering.FindPanelParserKind.And">
       <summary>
         <para>Words are combined by the ‘AND’ operator.</para>
-        <para>The operator changes to ‘OR’ when you precede a word with the ‘?’ character. The operator changes to ‘NOT’/‘AND NOT’ when you precede a word with the ‘-‘ sign.</para>
+        <para>The operator changes to ‘OR’ when you precede a word with the ‘?’ character.</para>
+        <para>The operator changes to ‘NOT’/‘AND NOT’ when you precede a word with the ‘-‘ sign.</para>
         <para>The ‘?administrator ?Maria Sweden -Owner‘ is treated as ‘Sweden AND (administrator OR Maria) AND NOT Owner‘.</para>
       </summary>
     </member>
@@ -3091,12 +3095,14 @@
     </member>
     <member name="F:DevExpress.Data.Filtering.FindPanelParserKind.Mixed">
       <summary>
-        <para>Words are combined by the ‘OR’ operator. The operator changes to ‘AND’ if you specify a column name before a search word. The ‘administrator owner Country:Sweden‘ string is treated as ‘(administrator OR owner) AND Sweden(in the Country column)‘</para>
+        <para>Words are combined by the ‘OR’ operator. The operator changes to ‘AND’ if you specify a column name before a search word.</para>
+        <para>The ‘administrator owner Country:Sweden‘ string is treated as ‘(administrator OR owner) AND Sweden(in the Country column)‘</para>
       </summary>
     </member>
     <member name="F:DevExpress.Data.Filtering.FindPanelParserKind.Or">
       <summary>
-        <para>Words are combined by the ‘OR’ operator. The operator changes to ‘AND’ when you precede a word with the ‘+’ sign. The ‘administrator Maria +Sweden‘ string is treated as the ‘Sweden AND (administrator OR Maria)‘ query.</para>
+        <para>Words are combined by the ‘OR’ operator.</para>
+        <para>The operator changes to ‘AND’ when you precede a word with the ‘+’ sign. The ‘administrator Maria +Sweden‘ string is treated as the ‘Sweden AND (administrator OR Maria)‘ query.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Data.Filtering.FunctionCategory">
@@ -5943,112 +5949,6 @@
     <member name="N:DevExpress.Data.Mask">
       <summary />
     </member>
-    <member name="T:DevExpress.Data.Mask.EventMaskManagerActionType">
-      <summary />
-    </member>
-    <member name="F:DevExpress.Data.Mask.EventMaskManagerActionType.Backspace">
-      <summary />
-    </member>
-    <member name="F:DevExpress.Data.Mask.EventMaskManagerActionType.Delete">
-      <summary />
-    </member>
-    <member name="F:DevExpress.Data.Mask.EventMaskManagerActionType.Init">
-      <summary />
-    </member>
-    <member name="F:DevExpress.Data.Mask.EventMaskManagerActionType.Insert">
-      <summary />
-    </member>
-    <member name="F:DevExpress.Data.Mask.EventMaskManagerActionType.SpinDown">
-      <summary />
-    </member>
-    <member name="F:DevExpress.Data.Mask.EventMaskManagerActionType.SpinUp">
-      <summary />
-    </member>
-    <member name="T:DevExpress.Data.Mask.EventMaskManagerEventArgs">
-      <summary />
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.ActionType">
-      <summary />
-      <value></value>
-    </member>
-    <member name="M:DevExpress.Data.Mask.EventMaskManagerEventArgs.Cancel">
-      <summary />
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.CursorPosition">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.EditText">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.Head">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.InsertedText">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.IsCanceled">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.IsSelection">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.Key">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.ResultCursorPosition">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.ResultEditText">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.ResultSelectionAnchor">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.SelectedText">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.SelectionAnchor">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.SelectionEnd">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.SelectionStart">
-      <summary />
-      <value></value>
-    </member>
-    <member name="M:DevExpress.Data.Mask.EventMaskManagerEventArgs.SetResult(System.String,System.Int32,System.Nullable{System.Int32})">
-      <summary />
-      <param name="editText"></param>
-      <param name="cursorPosition"></param>
-      <param name="selectionAnchor"></param>
-    </member>
-    <member name="M:DevExpress.Data.Mask.EventMaskManagerEventArgs.SetResult(System.String,System.String)">
-      <summary />
-      <param name="newHead"></param>
-      <param name="newTail"></param>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.Tag">
-      <summary />
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Data.Mask.EventMaskManagerEventArgs.Tail">
-      <summary />
-      <value></value>
-    </member>
     <member name="T:DevExpress.Data.Mask.MaskChangingEventArgs">
       <summary>
         <para>Provides data for the <see cref="E:DevExpress.Data.Mask.MaskManager.EditTextChanging"/> event.</para>
@@ -6279,6 +6179,11 @@
     <member name="M:DevExpress.Data.Mask.MaskManager.Insert(System.String)">
       <summary />
       <param name="insertedText"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Data.Mask.MaskManager.IsAutoInstallMaskManagerType(System.Type)">
+      <summary />
+      <param name="maskManagerType"></param>
       <returns></returns>
     </member>
     <member name="M:DevExpress.Data.Mask.MaskManager.IsCompatible(System.Type,System.Type)">
@@ -8725,6 +8630,19 @@
       </summary>
       <returns>A <see cref="T:System.Xml.Linq.XElement"/> value containing an XML definition of the data source schema.</returns>
     </member>
+    <member name="T:DevExpress.DataAccess.ISecureDataConverter">
+      <summary />
+    </member>
+    <member name="M:DevExpress.DataAccess.ISecureDataConverter.Protect(System.String)">
+      <summary />
+      <param name="entity"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.DataAccess.ISecureDataConverter.Unprotect(System.String)">
+      <summary />
+      <param name="protectedEntity"></param>
+      <returns></returns>
+    </member>
     <member name="N:DevExpress.DataAccess.Wizard">
       <summary>
         <para>Contains classes that are required to customize a data source connection wizard.</para>
@@ -10275,12 +10193,12 @@
     </member>
     <member name="F:DevExpress.Utils.DefaultBoolean.False">
       <summary>
-        <para>Corresponds to a Boolean value of false.</para>
+        <para>false. DefaultBoolean.False has a constant value of 1, while the standard false value corresponds to a value of 0. In Visual Basic, do not use implicit conversion of Boolean values to DefaultBoolean, and vice versa, as the conversion may produce incorrect results.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Utils.DefaultBoolean.True">
       <summary>
-        <para>Corresponds to a Boolean value of true.</para>
+        <para>true. DefaultBoolean.True has a constant value of 0, while the standard true value corresponds to a value of 1. In Visual Basic, do not use implicit conversion of Boolean values to DefaultBoolean, and vice versa, as the conversion may produce incorrect results.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Utils.DXCollection`1">
@@ -12577,6 +12495,44 @@
         <para>Specifies whether a report control allows loading images using the “file://“ protocol.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Utils.UrlAccessSecurityLevel"/> enumeration value.</value>
+    </member>
+    <member name="T:DevExpress.Utils.UrlResolver">
+      <summary />
+    </member>
+    <member name="M:DevExpress.Utils.UrlResolver.CanMapPath(System.String)">
+      <summary />
+      <param name="url"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Utils.UrlResolver.CreateInstance">
+      <summary />
+      <returns></returns>
+    </member>
+    <member name="P:DevExpress.Utils.UrlResolver.Instance">
+      <summary />
+      <value></value>
+    </member>
+    <member name="M:DevExpress.Utils.UrlResolver.MapPath(System.String)">
+      <summary />
+      <param name="url"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Utils.UrlResolver.TrimUrl(System.String)">
+      <summary />
+      <param name="url"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Utils.UrlResolver.TryGetRelativePath(System.String,System.String@)">
+      <summary />
+      <param name="url"></param>
+      <param name="value"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Utils.UrlResolver.TryMapPath(System.String,System.String@)">
+      <summary />
+      <param name="path"></param>
+      <param name="value"></param>
+      <returns></returns>
     </member>
     <member name="T:DevExpress.Utils.VertAlignment">
       <summary>
@@ -16152,7 +16108,28 @@
     </member>
     <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.DateRange">
       <summary>
-        <para>This option is in effect for columns that store date/time values. Rows are combined into the following non-overlapping groups according to their date value as compared with today’s date: “Beyond Next Month”, “Next Month”, “Later this Month”, “Three Weeks Away”, “Two Weeks Away”, “Next Week”, “Today”, “Tomorrow”, “Yesterday”, “Sunday”, “Monday”, “Tuesday”, “Wednesday”, “Thursday”, “Friday”, “Saturday”, “Last Week”, “Two Weeks Ago”, “Three Weeks Ago”, “Earlier this Month”, “Last Month”, “Older”.</para>
+        <para>This option is in effect for columns that store date/time values. Rows are combined into the following non-overlapping groups according to their date value as compared with today’s date: &quot;Beyond Next Month&quot;,</para>
+        <para>&quot;Next Month&quot;,</para>
+        <para>&quot;Later this Month&quot;,</para>
+        <para>&quot;Three Weeks Away&quot;,</para>
+        <para>&quot;Two Weeks Away&quot;,</para>
+        <para>&quot;Next Week&quot;,</para>
+        <para>&quot;Today&quot;,</para>
+        <para>&quot;Tomorrow&quot;,</para>
+        <para>&quot;Yesterday&quot;,</para>
+        <para>&quot;Sunday&quot;,</para>
+        <para>&quot;Monday&quot;,</para>
+        <para>&quot;Tuesday&quot;,</para>
+        <para>&quot;Wednesday&quot;,</para>
+        <para>&quot;Thursday&quot;,</para>
+        <para>&quot;Friday&quot;,</para>
+        <para>&quot;Saturday&quot;,</para>
+        <para>&quot;Last Week&quot;,</para>
+        <para>&quot;Two Weeks Ago&quot;,</para>
+        <para>&quot;Three Weeks Ago&quot;,</para>
+        <para>&quot;Earlier this Month&quot;,</para>
+        <para>&quot;Last Month&quot;,</para>
+        <para>&quot;Older&quot;.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.DateYear">
@@ -17358,6 +17335,30 @@
       <param name="toDpi">A <see cref="T:System.Single"/> value, specifying the required DPI setting.</param>
       <returns>A <see cref="T:System.Single"/> value.</returns>
     </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DeviceDpiToDoc(System.Drawing.PointF,System.Single)">
+      <summary />
+      <param name="val"></param>
+      <param name="deviceDpi"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DeviceDpiToDoc(System.Drawing.RectangleF,System.Single)">
+      <summary />
+      <param name="val"></param>
+      <param name="deviceDpi"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DeviceDpiToDoc(System.Drawing.SizeF,System.Single)">
+      <summary />
+      <param name="val"></param>
+      <param name="deviceDpi"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DeviceDpiToDoc(System.Single,System.Single)">
+      <summary />
+      <param name="val"></param>
+      <param name="deviceDpi"></param>
+      <returns></returns>
+    </member>
     <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DipToDoc(System.Drawing.RectangleF)">
       <summary>
         <para>Converts the location and size of a rectangle calculated in device-independent pixels (DIP) to a value calculated in document units (measured in 1/300 of an inch).</para>
@@ -17387,6 +17388,36 @@
     <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DipToTwips(System.Single)">
       <summary />
       <param name="val"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToDeviceDpi(DevExpress.XtraPrinting.Native.MarginsF,System.Single)">
+      <summary />
+      <param name="val"></param>
+      <param name="deviceDpi"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToDeviceDpi(System.Drawing.PointF,System.Single)">
+      <summary />
+      <param name="val"></param>
+      <param name="deviceDpi"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToDeviceDpi(System.Drawing.RectangleF,System.Single)">
+      <summary />
+      <param name="val"></param>
+      <param name="deviceDpi"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToDeviceDpi(System.Drawing.SizeF,System.Single)">
+      <summary />
+      <param name="val"></param>
+      <param name="deviceDpi"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToDeviceDpi(System.Single,System.Single)">
+      <summary />
+      <param name="val"></param>
+      <param name="deviceDpi"></param>
       <returns></returns>
     </member>
     <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToDip(System.Drawing.RectangleF)">
@@ -19081,7 +19112,8 @@
     </member>
     <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_CannotExportToDocx">
       <summary>
-        <para>“The document cannot be exported to DOCX format correctly with the specified settings.\r\n If possible, avoid intersecting elements in your document, or try to use the ‘{0}’ export mode with the ‘{1}’ option disabled.“</para>
+        <para>“**The document cannot be exported to DOCX format correctly with the specified settings.rn</para>
+        <para>If possible, avoid intersecting elements in your document, or try to use the ‘{0}’ export mode with the ‘{1}’ option disabled.**”</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_CannotFindFile">
@@ -19171,7 +19203,8 @@
     </member>
     <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_IgnoredSvgElements">
       <summary>
-        <para>“Some SVG elements in this image are unsupported and will be ignored.\r\n Please modify the image to avoid these element types: {0}.“</para>
+        <para>“**Some SVG elements in this image are unsupported and will be ignored.</para>
+        <para>Please modify the image to avoid these element types: {0}.**”</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_ImageLoadError">

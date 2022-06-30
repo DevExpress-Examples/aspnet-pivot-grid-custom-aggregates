@@ -6372,7 +6372,7 @@
       <summary>
         <para>Specifies an application used to modify the document.</para>
       </summary>
-      <value>The application name. The default is “DevExpress Office File API/<span class="macro" data-macro-template="xx.x.x">21.2.2</span>.0”.</value>
+      <value>The application name. The default is “DevExpress Office File API/<span class="macro" data-macro-template="xx.x.x">21.2.8</span>.0”.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.AppVersion">
       <summary>
@@ -7180,8 +7180,10 @@
       <value>An enumeration member that specifies the shape’s type.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.WatermarkFormat">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Provides access to watermark settings.</para>
+      </summary>
+      <value>An object that contains watermark settings.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Width">
       <summary>
@@ -7211,6 +7213,11 @@
       </summary>
       <param name="password">A password to encrypt the document.</param>
       <param name="type">The encryption type.</param>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.API.Native.EncryptionSettings.Dispose">
+      <summary>
+        <para>Disposes of the EncryptionSettings object.</para>
+      </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.EncryptionSettings.Password">
       <summary>
@@ -7887,8 +7894,8 @@
       <summary>
         <para>Creates a hyperlink for the specified document range and adds it to the collection.</para>
       </summary>
-      <param name="range">A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> object specifying a range associated with the hyperlink.</param>
-      <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.Hyperlink"/> interface exposing the created hyperlink.</returns>
+      <param name="range">A range associated with the hyperlink.</param>
+      <returns>The created hyperlink.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.HyperlinkCollection.Remove(DevExpress.XtraRichEdit.API.Native.Hyperlink)">
       <summary>
@@ -10119,14 +10126,14 @@
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.Paragraph">
       <summary>
-        <para>Represents a single paragraph in a document.</para>
+        <para>A document paragraph.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Paragraph.Alignment">
       <summary>
-        <para>Gets or sets text alignment within a paragraph.</para>
+        <para>Gets or sets the paragraph’s text alignment.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ParagraphAlignment"/> enumeration value.</value>
+      <value>Indicates a paragraph alignment.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Paragraph.BackColor">
       <summary>
@@ -10138,8 +10145,8 @@
       <summary>
         <para>Starts modifying tab stops in a paragraph.</para>
       </summary>
-      <param name="onlyOwnTabs">true to get tab stops set for the current paragraph only, disregarding style; otherwise, if set to false, merges tab stops which are set for the paragraph style and for the individual paragraph.</param>
-      <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.TabInfoCollection"/> object containing information about tab stops.</returns>
+      <param name="onlyOwnTabs">true to set tab stops for the target paragraph only, disregarding style; false to merge tab stops which are set for the paragraph style and for the individual paragraph.</param>
+      <returns>A collection of paragraph tab stops.</returns>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Paragraph.ContextualSpacing">
       <summary>
@@ -10149,7 +10156,7 @@
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.Paragraph.EndUpdateTabs(DevExpress.XtraRichEdit.API.Native.TabInfoCollection)">
       <summary>
-        <para>Finalizes modifications of tab stops for the current paragraph.</para>
+        <para>Finalizes modifications of tab stops for the paragraph.</para>
       </summary>
       <param name="tabs">A <see cref="T:DevExpress.XtraRichEdit.API.Native.TabInfoCollection"/> collection containing information about tab stops.</param>
     </member>
@@ -10327,7 +10334,7 @@
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ParagraphAlignment">
       <summary>
-        <para>Specifies text alignment within a paragraph.</para>
+        <para>Specifies a paragraph alignment.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ParagraphAlignment.Center">
@@ -10494,7 +10501,7 @@
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ParagraphProperties">
       <summary>
-        <para>Represents paragraph properties.</para>
+        <para>Contains paragraph properties.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphProperties.Style">
@@ -10505,7 +10512,7 @@
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase">
       <summary>
-        <para>Serves as the base for the <see cref="T:DevExpress.XtraRichEdit.API.Native.ParagraphProperties"/> interface, providing access to paragraph properties.</para>
+        <para>Serves as the base for the <see cref="T:DevExpress.XtraRichEdit.API.Native.ParagraphProperties"/> interface, obtaining paragraph properties.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase.Alignment">
@@ -10540,7 +10547,7 @@
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase.FirstLineIndentType">
       <summary>
-        <para>Gets or sets a value specifying whether and how a paragraph’s first line is indented.</para>
+        <para>Gets or sets how a paragraph’s first line is indented.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ParagraphFirstLineIndent"/> enumeration value, specifying the first line indent or null (Nothing in Visual Basic), for a mixture of paragraphs with different indent types.</value>
     </member>
@@ -10560,31 +10567,31 @@
       <summary>
         <para>Gets or sets a paragraph’s left indent.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value representing the left indent measured in <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> units or null (Nothing in Visual Basic) for a mixture of paragraphs with different indents.</value>
+      <value>The left indent measured in <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> units or null (Nothing in Visual Basic) for a mixture of paragraphs with different indents.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase.LineSpacing">
       <summary>
         <para>Gets or sets a line spacing value.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value representing line spacing measured in <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> units or null (Nothing in Visual Basic) for a mixture of paragraphs with different line spacings.</value>
+      <value>Line spacing measured in <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> units or null (Nothing in Visual Basic) for a mixture of paragraphs with different line spacings.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase.LineSpacingMultiplier">
       <summary>
-        <para>Gets or sets the multiplier which is used to calculate the line spacing value.</para>
+        <para>Gets or sets the multiplier used to calculate the line spacing value.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value representing the line spacing multiplier or null (Nothing in Visual Basic), for a mixture of paragraphs with different line spacings.</value>
+      <value>Line spacing multiplier or null (Nothing in Visual Basic), for a mixture of paragraphs with different line spacings.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase.LineSpacingType">
       <summary>
-        <para>Gets or sets a value which determines the spacing between paragraph’s lines.</para>
+        <para>Gets or sets the spacing type between a paragraph’s lines.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ParagraphLineSpacing"/> enumeration value representing the line spacing type.</value>
+      <value>Indicates the line spacing type.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase.OutlineLevel">
       <summary>
         <para>Gets or sets the paragraph’s outline level.</para>
       </summary>
-      <value>An integer specifying the level number, or null for a mixture of values.</value>
+      <value>A level number, or null for a mixture of values.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase.PageBreakBefore">
       <summary>
@@ -10607,7 +10614,7 @@
       <summary>
         <para>Gets or sets the paragraph’s right indent.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value representing the right indent measured in <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> units or null (Nothing in Visual Basic) for a mixture of paragraphs with different indents.</value>
+      <value>The right indent measured in <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> units or null (Nothing in Visual Basic) for a mixture of paragraphs with different indents.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase.RightToLeft">
       <summary>
@@ -10617,15 +10624,15 @@
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase.SpacingAfter">
       <summary>
-        <para>Gets or sets the spacing after the current paragraph.</para>
+        <para>Gets or sets the spacing after a paragraph.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value representing the spacing after the paragraph, measured in <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> units or null (Nothing in Visual Basic), for a mixture of paragraphs with different spacings.</value>
+      <value>The spacing after the paragraph measured in <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> units, or null (Nothing in Visual Basic), for a mixture of paragraphs with different spacings.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase.SpacingBefore">
       <summary>
-        <para>Gets or sets the spacing before the current paragraph.</para>
+        <para>Gets or sets the spacing before a paragraph.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value representing the spacing before the paragraph, measured in <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> units or null (Nothing in Visual Basic), for a mixture of paragraphs with different spacings.</value>
+      <value>The spacing before the paragraph measured in <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> units, or null (Nothing in Visual Basic), for a mixture of paragraphs with different spacings.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesBase.SuppressHyphenation">
       <summary>
@@ -10752,10 +10759,10 @@
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesWithTabs.BeginUpdateTabs(System.Boolean)">
       <summary>
-        <para>Starts modifying tab stops in a paragraph.</para>
+        <para>Starts modifying paragraph tab stops.</para>
       </summary>
-      <param name="onlyOwnTabs">true to get tab stops set for the current paragraph only, disregarding style; otherwise, if set to false, merges tab stops which are set for the paragraph style and for the individual paragraph.</param>
-      <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.TabInfoCollection"/> object containing information about tab stops.</returns>
+      <param name="onlyOwnTabs">true to set tab stops for the target paragraph only, disregarding style; false to merge tab stops which are set for the paragraph style and for the individual paragraph.</param>
+      <returns>A collection of paragraph tab stops.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ParagraphPropertiesWithTabs.EndUpdateTabs(DevExpress.XtraRichEdit.API.Native.TabInfoCollection)">
       <summary>
@@ -11395,7 +11402,7 @@
       <summary>
         <para>Gets the name of the application used to modify the document.</para>
       </summary>
-      <value>The application’s name. The default is “DevExpress Office File API/<span class="macro" data-macro-template="xx.x.x">21.2.2</span>.0”.</value>
+      <value>The application’s name. The default is “DevExpress Office File API/<span class="macro" data-macro-template="xx.x.x">21.2.8</span>.0”.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ReadOnlyDocumentBuiltInProperties.AppVersion">
       <summary>
@@ -13466,7 +13473,7 @@
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeCollection">
       <summary>
-        <para>A collection of drawing objects (shapes, pictures, text boxes, charts, OLE objects, and ActiveX controls).</para>
+        <para>A collection of drawing objects (shapes, pictures, text boxes, charts, watermarks, OLE objects, and ActiveX controls).</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.Clear">
@@ -13519,17 +13526,21 @@
       <returns>The group embedded in the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertImageWatermark(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.Drawing.Image)">
-      <summary />
-      <param name="pos"></param>
-      <param name="image"></param>
-      <returns></returns>
+      <summary>
+        <para>Inserts an image watermark into the section header.</para>
+      </summary>
+      <param name="pos">The position of the watermark anchor.</param>
+      <param name="image">A watermark image.</param>
+      <returns>The watermark inserted into the header.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertImageWatermark(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.Drawing.Image,DevExpress.XtraRichEdit.API.Native.ImageWatermarkOptions)">
-      <summary />
-      <param name="pos"></param>
-      <param name="image"></param>
-      <param name="watermarkOptions"></param>
-      <returns></returns>
+      <summary>
+        <para>Inserts an image watermark into the section header.</para>
+      </summary>
+      <param name="pos">The position of the watermark anchor.</param>
+      <param name="image">A watermark image.</param>
+      <param name="watermarkOptions">An object that contains image watermark options.</param>
+      <returns>The watermark inserted into the header.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertLine(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.Drawing.PointF,System.Drawing.PointF)">
       <summary>
@@ -13722,17 +13733,21 @@
       <returns>The text box embedded in the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertTextWatermark(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String)">
-      <summary />
-      <param name="pos"></param>
-      <param name="text"></param>
-      <returns></returns>
+      <summary>
+        <para>Inserts a text watermark into the section header.</para>
+      </summary>
+      <param name="pos">The position of the watermark anchor.</param>
+      <param name="text">Watermark text.</param>
+      <returns>The watermark inserted into the header.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertTextWatermark(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String,DevExpress.XtraRichEdit.API.Native.TextWatermarkOptions)">
-      <summary />
-      <param name="pos"></param>
-      <param name="text"></param>
-      <param name="watermarkOptions"></param>
-      <returns></returns>
+      <summary>
+        <para>Inserts a text watermark into the section header.</para>
+      </summary>
+      <param name="pos">The position of the watermark anchor.</param>
+      <param name="text">Watermark text.</param>
+      <param name="watermarkOptions">An object that contains text watermark options.</param>
+      <returns>The watermark inserted into the header.</returns>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ShapeCollection.Item(System.String)">
       <summary>
@@ -15450,9 +15465,9 @@
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.SubDocument.EndUpdateParagraphs(DevExpress.XtraRichEdit.API.Native.ParagraphProperties)">
       <summary>
-        <para>Finalizes the modification of paragraph formatting after calling the <see cref="M:DevExpress.XtraRichEdit.API.Native.SubDocument.BeginUpdateParagraphs(DevExpress.XtraRichEdit.API.Native.DocumentRange)"/> method.</para>
+        <para>Finalizes the modification of paragraph formatting after the BeginUpdateParagraphs method call.</para>
       </summary>
-      <param name="properties">A <see cref="T:DevExpress.XtraRichEdit.API.Native.ParagraphProperties"/> object representing paragraph formatting.</param>
+      <param name="properties">Contains paragraph formatting options.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.SubDocument.EndUpdateRangePermissions(DevExpress.XtraRichEdit.API.Native.RangePermissionCollection)">
       <summary>
@@ -16850,9 +16865,9 @@
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TableCell.ContentRange">
       <summary>
-        <para>Gets the document range occupied by the cell content.</para>
+        <para>Gets the document range that contains the cell content (excluding the table paragraph mark).</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> that is the target range.</value>
+      <value>The range with the cell content.</value>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.TableCell.Delete">
       <summary>
@@ -16915,9 +16930,9 @@
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TableCell.Range">
       <summary>
-        <para>Gets a document range occupied by the current cell.</para>
+        <para>Gets a document range that contains the cell content, including the table paragraph mark.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> occupied by a cell.</value>
+      <value>A range with the cell content.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TableCell.RightPadding">
       <summary>
@@ -17319,31 +17334,31 @@
       <summary>
         <para>Inserts a blank table with the specified number of rows and columns at the specified position.</para>
       </summary>
-      <param name="pos">A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> at which a table is inserted.</param>
-      <param name="rowCount">An integer specifying the number of rows in a new table.</param>
-      <param name="columnCount">An integer specifying the number of columns in a new table.</param>
-      <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.Table"/> interface specifying the newly created table.</returns>
+      <param name="pos">A position at which a table is inserted.</param>
+      <param name="rowCount">A number of table rows.</param>
+      <param name="columnCount">A number of table columns.</param>
+      <returns>The created table.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.TableCollection.Create(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.Int32,System.Int32,DevExpress.XtraRichEdit.API.Native.AutoFitBehaviorType)">
       <summary>
         <para>Inserts a blank table with the specified number of rows and columns at the specified position.</para>
       </summary>
       <param name="pos">A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> at which a table is inserted.</param>
-      <param name="rowCount">An integer specifying the number of rows in a new table.</param>
-      <param name="columnCount">An integer specifying the number of columns in a new table.</param>
-      <param name="autoFitBehavior">An <see cref="T:DevExpress.XtraRichEdit.API.Native.AutoFitBehaviorType"/> enumeration value specifying how the column widths are calculated.</param>
-      <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.Table"/> interface specifying the newly created table.</returns>
+      <param name="rowCount">A number of table rows.</param>
+      <param name="columnCount">A number of table columns.</param>
+      <param name="autoFitBehavior">Indicates the AutoFit layout algorithm type.</param>
+      <returns>The newly created table.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.TableCollection.Create(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.Int32,System.Int32,DevExpress.XtraRichEdit.API.Native.AutoFitBehaviorType,System.Int32)">
       <summary>
         <para>Inserts a blank table with the specified number of rows and columns at the specified position.</para>
       </summary>
       <param name="pos">A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> at which a table is inserted.</param>
-      <param name="rowCount">An integer specifying the number of rows in a new table.</param>
-      <param name="columnCount">An integer specifying the number of columns in a new table.</param>
-      <param name="autoFitBehavior">An <see cref="T:DevExpress.XtraRichEdit.API.Native.AutoFitBehaviorType"/> enumeration value specifying how the column widths are calculated.</param>
-      <param name="fixedColumnWidths">An integer specifying the column width if the autoFitBehavior parameter is set to <see cref="F:DevExpress.XtraRichEdit.API.Native.AutoFitBehaviorType.FixedColumnWidth"/>.</param>
-      <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.Table"/> interface specifying the newly created table.</returns>
+      <param name="rowCount">A  number of table rows.</param>
+      <param name="columnCount">A number of table columns.</param>
+      <param name="autoFitBehavior">Indicates the AutoFit layout algorithm type.</param>
+      <param name="fixedColumnWidths">The column width if the autoFitBehavior parameter is set to FixedColumnWidth.</param>
+      <returns>The newly created table.</returns>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TableCollection.First">
       <summary>
@@ -17390,8 +17405,8 @@
       <summary>
         <para>Creates a table style for the specified table elements and adds it to the collection.</para>
       </summary>
-      <param name="condition">A <see cref="T:DevExpress.XtraRichEdit.API.Native.ConditionalTableStyleFormattingTypes"/> enumeration value that specifies table elements to which a style can be applied.</param>
-      <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.TableConditionalStyle"/> object.</returns>
+      <param name="condition">Indicates a table element to which a style can be applied.</param>
+      <returns>An object that contains style properties.</returns>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TableConditionalStyleProperties.Item(DevExpress.XtraRichEdit.API.Native.ConditionalTableStyleFormattingTypes)">
       <summary>
@@ -17939,14 +17954,14 @@
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.TableStyle">
       <summary>
-        <para>A single style that can be applied to a table.</para>
+        <para>A table style.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TableStyle.ConditionalStyleProperties">
       <summary>
-        <para>Provides access to the container object that holds conditional styles and enables you to retrieve or create them.</para>
+        <para>Obtains options for specific table elements (first cell, first row, etc.).</para>
       </summary>
-      <value>An object implementing the <see cref="T:DevExpress.XtraRichEdit.API.Native.TableConditionalStyleProperties"/> interface.</value>
+      <value>An object that contains conditional style properties.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TableStyle.IsDeleted">
       <summary>
@@ -17974,14 +17989,14 @@
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.TableStyleCollection">
       <summary>
-        <para>A TableStyle objects collection that contains the table styles in a document.</para>
+        <para>A collection of table styles.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.TableStyleCollection.Add(DevExpress.XtraRichEdit.API.Native.TableStyle)">
       <summary>
-        <para>Add a style to the collection of styles in the current document.</para>
+        <para>Add a style to the style collection.</para>
       </summary>
-      <param name="style">A <see cref="T:DevExpress.XtraRichEdit.API.Native.TableStyle"/> class instance that is a table style.</param>
+      <param name="style">A table style to add to the collection.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.TableStyleCollection.CreateNew">
       <summary>
@@ -18181,7 +18196,7 @@
       <summary>
         <para>Gets or sets whether the watermark text is semitransparent.</para>
       </summary>
-      <value>true if the watermark is semitransparent; false if the watermark in 100% opaque.</value>
+      <value>true if the watermark is semitransparent; false if the watermark is 100% opaque.</value>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.TextWrappingSide">
       <summary>
@@ -18513,29 +18528,39 @@
       </summary>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.WatermarkFormat">
-      <summary />
+      <summary>
+        <para>Contains watermark settings.</para>
+      </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.WatermarkFormat.ImageOptions">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Returns options for the image watermark.</para>
+      </summary>
+      <value>An object that contains image watermark options.</value>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.WatermarkFormat.SetImage(System.Drawing.Image)">
-      <summary />
-      <param name="image"></param>
+      <summary>
+        <para>Replaces the watermark image.</para>
+      </summary>
+      <param name="image">A new watermark image.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.WatermarkFormat.SetText(System.String)">
-      <summary />
-      <param name="text"></param>
+      <summary>
+        <para>Replaces watermark text.</para>
+      </summary>
+      <param name="text">New watermark text.</param>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.WatermarkFormat.TextOptions">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Returns options for the text watermark.</para>
+      </summary>
+      <value>An object that contains text watermark options.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.WatermarkFormat.Type">
       <summary>
-        <para>Returns the watermark’s type.</para>
+        <para>Returns the watermark type.</para>
       </summary>
-      <value>Indicates the watermark’s type.</value>
+      <value>An enumeration member that indicates the watermark type.</value>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.WatermarkLayout">
       <summary>
@@ -19093,7 +19118,7 @@
     </member>
     <member name="T:DevExpress.XtraRichEdit.BookmarkOptions">
       <summary>
-        <para>Represents settings which define the appearance of bookmarks in the document.</para>
+        <para>Contains settings used to define the bookmark appearance and behavior in the Rich Text Editor.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraRichEdit.BookmarkOptions.#ctor">
@@ -23207,6 +23232,10 @@
       </summary>
       <value>An XtraRichEditStringId enumeration value, identifying the resource string.</value>
     </member>
+    <member name="P:DevExpress.XtraRichEdit.Commands.InsertTableElementMenuCommand.Id">
+      <summary />
+      <value></value>
+    </member>
     <member name="P:DevExpress.XtraRichEdit.Commands.InsertTableElementMenuCommand.MenuCaptionStringId">
       <summary>
         <para>Gets a string resource identifier of a menu caption corresponding to <see cref="T:DevExpress.XtraRichEdit.Commands.InsertTableElementMenuCommand"/>.</para>
@@ -25931,6 +25960,10 @@
       </summary>
       <value>A command ID.</value>
     </member>
+    <member name="F:DevExpress.XtraRichEdit.Commands.RichEditCommandId.InsertTableElement">
+      <summary />
+      <value></value>
+    </member>
     <member name="F:DevExpress.XtraRichEdit.Commands.RichEditCommandId.InsertTableInner">
       <summary>
         <para>For internal use.</para>
@@ -26406,6 +26439,12 @@
     <member name="F:DevExpress.XtraRichEdit.Commands.RichEditCommandId.RtlIncreaseIndent">
       <summary>
         <para>RtlIncrementIndentCommand ID.</para>
+      </summary>
+      <value>A command ID.</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.Commands.RichEditCommandId.RtlShowNumberingListForm">
+      <summary>
+        <para>RtlShowNumberingListForm ID.</para>
       </summary>
       <value>A command ID.</value>
     </member>
@@ -29782,33 +29821,50 @@
       </summary>
       <param name="control">An object implementing the DevExpress.XtraRichEdit.IRichEditControl interface, specifying the command owner.</param>
     </member>
-    <member name="P:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommand.DescriptionStringId">
+    <member name="M:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommand.UpdateUIState(DevExpress.Utils.Commands.ICommandUIState)">
+      <summary>
+        <para>Updates the command state and applies restrictions.</para>
+      </summary>
+      <param name="state">An object that defines the command state.</param>
+    </member>
+    <member name="T:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommandBase">
+      <summary>
+        <para>A base class for ShowNumberingListFormCommand and RtlShowNumberingListFormCommand classes.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommandBase.#ctor(DevExpress.XtraRichEdit.IRichEditControl)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommandBase"/> class with specified settings.</para>
+      </summary>
+      <param name="control">An object implementing the DevExpress.XtraRichEdit.IRichEditControl interface, specifying the command owner.</param>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommandBase.DescriptionStringId">
       <summary>
         <para>Gets a string resource identifier of a command description.</para>
       </summary>
       <value>An XtraRichEditStringId enumeration value, identifying the resource string.</value>
     </member>
-    <member name="M:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommand.ForceExecute(DevExpress.Utils.Commands.ICommandUIState)">
+    <member name="M:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommandBase.ForceExecute(DevExpress.Utils.Commands.ICommandUIState)">
       <summary>
         <para>Executes the command specifying the UI state explicitly.</para>
       </summary>
       <param name="state">An object which implements the <see cref="T:DevExpress.Utils.Commands.ICommandUIState"/> interface.</param>
     </member>
-    <member name="P:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommand.Id">
+    <member name="P:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommandBase.Id">
       <summary>
-        <para>Gets the ID of the <see cref="T:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommand"/>.</para>
+        <para>Returns the ID of the ShowNumberingListFormCommandBase.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.Commands.RichEditCommandId"/> member, identifying the command.</value>
+      <value>A RichEditCommandId member, identifying the command.</value>
     </member>
-    <member name="P:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommand.ImageName">
+    <member name="P:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommandBase.ImageName">
       <summary>
-        <para>Gets the name of the resource image corresponding to <see cref="T:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommand"/>.</para>
+        <para>Gets the name of the resource image corresponding to ShowNumberingListFormCommandBase.</para>
       </summary>
-      <value>A <see cref="T:System.String"/> value, specifying the name of an image contained in resources.</value>
+      <value>The name of an image contained in resources.</value>
     </member>
-    <member name="P:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommand.MenuCaptionStringId">
+    <member name="P:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommandBase.MenuCaptionStringId">
       <summary>
-        <para>Gets a string resource identifier of a menu caption corresponding to <see cref="T:DevExpress.XtraRichEdit.Commands.ShowNumberingListFormCommand"/>.</para>
+        <para>Gets a string resource identifier of a menu caption corresponding to ShowNumberingListFormCommandBase.</para>
       </summary>
       <value>A XtraRichEditStringId enumeration value, identifying the resource string.</value>
     </member>
@@ -36148,7 +36204,7 @@
     </member>
     <member name="T:DevExpress.XtraRichEdit.HyperlinkOptions">
       <summary>
-        <para>Represents settings which define the appearance and behavior of hyperlinks in the document.</para>
+        <para>Contains settings used to define the hyperlink appearance in the Rich Text Editor.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraRichEdit.HyperlinkOptions.#ctor">
@@ -36357,9 +36413,9 @@
     </member>
     <member name="P:DevExpress.XtraRichEdit.Import.HtmlDocumentImporterOptions.AutoDetectEncoding">
       <summary>
-        <para>Gets or sets whether the auto-detection of the charset of the html file is enabled.</para>
+        <para>Gets or sets whether to enable the auto-detection of the loaded text encoding.</para>
       </summary>
-      <value>true to enable the auto-detect option; otherwise, false.</value>
+      <value>true to enable the automatic encoding detection; otherwise, false.</value>
     </member>
     <member name="M:DevExpress.XtraRichEdit.Import.HtmlDocumentImporterOptions.CopyFrom(DevExpress.Office.Import.IImporterOptions)">
       <summary>
@@ -36371,7 +36427,7 @@
       <summary>
         <para>Gets or sets the encoding used to interpret characters in the document.</para>
       </summary>
-      <value>A <see cref="T:System.Text.Encoding"/> object providing the conversion between certain encoding and Unicode.</value>
+      <value>An object that contains character encoding parameters.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.Import.HtmlDocumentImporterOptions.FontScalingDpiValue">
       <summary>
@@ -36481,9 +36537,9 @@
     </member>
     <member name="P:DevExpress.XtraRichEdit.Import.PlainTextDocumentImporterOptions.AutoDetectEncoding">
       <summary>
-        <para>Gets or sets whether the auto-detection of the loaded text encoding is enabled.</para>
+        <para>Gets or sets whether to enable the auto-detection of the loaded text encoding.</para>
       </summary>
-      <value>true to switch the encoding autodetection on; otherwise, false.</value>
+      <value>true to enable the automatic encoding detection; otherwise, false.</value>
     </member>
     <member name="M:DevExpress.XtraRichEdit.Import.PlainTextDocumentImporterOptions.CopyFrom(DevExpress.Office.Import.IImporterOptions)">
       <summary>
@@ -36495,7 +36551,7 @@
       <summary>
         <para>Gets or sets the encoding used to interpret characters in the document.</para>
       </summary>
-      <value>A <see cref="T:System.Text.Encoding"/> object providing the conversion between certain encoding and Unicode.</value>
+      <value>An object that contains character encoding parameters.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.Import.PlainTextDocumentImporterOptions.UpdateField">
       <summary>
@@ -37290,6 +37346,11 @@
     <member name="E:DevExpress.XtraRichEdit.IRichEditDocumentServer.AfterExport">
       <summary>
         <para>Occurs after the document is successfully exported.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.XtraRichEdit.IRichEditDocumentServer.BeforeEncodingDetection">
+      <summary>
+        <para>Occurs before detecting encoding of the loaded plain text or HTML content.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraRichEdit.IRichEditDocumentServer.BeforeExport">
@@ -38235,15 +38296,15 @@
     </member>
     <member name="P:DevExpress.XtraRichEdit.PrintingOptions.EnableCommentBackgroundOnPrint">
       <summary>
-        <para>Gets or sets whether to print the background of the document’s margin containing comment balloons.</para>
+        <para>Gets or sets whether to print the background of the document’s margin with comment balloons.</para>
       </summary>
-      <value>True, to print the background of the document’s margin; otherwise, false.</value>
+      <value>true, to print the background of the document’s margin; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.PrintingOptions.EnableCommentFillOnPrint">
       <summary>
         <para>Gets or sets whether to print the background color of the comment balloons.</para>
       </summary>
-      <value>True, to print the comment balloon background; otherwise, false.</value>
+      <value>true, to print the comment balloon background; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.PrintingOptions.EnablePageBackgroundOnPrint">
       <summary>
@@ -39167,6 +39228,11 @@
     <member name="E:DevExpress.XtraRichEdit.RichEditDocumentServer.AfterExport">
       <summary>
         <para>Occurs after the document is successfully exported.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.XtraRichEdit.RichEditDocumentServer.BeforeEncodingDetection">
+      <summary>
+        <para>Occurs before detection of the loaded plain text or HTML encoding.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraRichEdit.RichEditDocumentServer.BeforeExport">
