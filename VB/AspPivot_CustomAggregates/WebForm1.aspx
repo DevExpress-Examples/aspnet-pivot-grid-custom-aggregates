@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="AspPivot_CustomFunctions.WebForm1" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v21.2, Version=21.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v22.1, Version=22.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" 
     Namespace="DevExpress.Web.ASPxPivotGrid" TagPrefix="dx" %>
 
 <!DOCTYPE html>
@@ -36,7 +36,7 @@
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                 ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
                 ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
-                SelectCommand="SELECT [Country], [ProductName], [CategoryName], [Extended Price] AS Extended_Price, [Sales Person] AS Sales_Person FROM [SalesPerson]">
+                SelectCommand="SELECT [Country], [ProductName], [CategoryName], [ExtendedPrice] AS Extended_Price, [FullName] AS Sales_Person FROM [SalesPerson]">
             </asp:SqlDataSource>
         </div>
     </form>

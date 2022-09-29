@@ -1,4 +1,4 @@
-﻿using DevExpress.Data.Filtering;
+using DevExpress.Data.Filtering;
 using DevExpress.DataProcessing.Criteria;
 using System;
 

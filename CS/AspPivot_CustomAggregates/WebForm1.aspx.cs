@@ -1,4 +1,4 @@
-﻿using FirstValueAggregate;
+using FirstValueAggregate;
 using DevExpress.Data.Filtering;
 using System;
 
