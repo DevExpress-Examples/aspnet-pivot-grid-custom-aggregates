@@ -38,7 +38,7 @@
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                 ConnectionString="<%$ ConnectionStrings:nwind %>" 
                 ProviderName="<%$ ConnectionStrings:nwind.ProviderName %>" 
-                SelectCommand="SELECT [Country], [ProductName], [CategoryName], [Extended Price] AS Extended_Price, [Sales Person] AS Sales_Person FROM [SalesPerson]">
+                SelectCommand="SELECT [Country], [ProductName], [CategoryName], [ExtendedPrice] AS Extended_Price, [FullName] AS Sales_Person FROM [SalesPerson]">
             </asp:SqlDataSource>
         </div>
     </form>
