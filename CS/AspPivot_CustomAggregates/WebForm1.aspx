@@ -36,11 +36,11 @@
                 <OptionsData DataProcessingEngine="Optimized" />
             </dx:ASPxPivotGrid>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-                ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
+                ConnectionString="<%$ ConnectionStrings:nwind %>" 
+                ProviderName="<%$ ConnectionStrings:nwind.ProviderName %>" 
                 SelectCommand="SELECT [Country], [ProductName], [CategoryName], [ExtendedPrice] AS Extended_Price, [FullName] AS Sales_Person FROM [SalesPerson]">
             </asp:SqlDataSource>
         </div>
     </form>
-</body>
+    </body>
 </html>
