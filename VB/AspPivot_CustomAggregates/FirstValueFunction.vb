@@ -1,6 +1,7 @@
 Imports DevExpress.Data.Filtering
 Imports DevExpress.DataProcessing.Criteria
 Imports System
+Imports System.Linq
 
 Namespace FirstValueAggregate
     Friend Class FirstValueAggregateFunction
@@ -43,7 +44,7 @@ Namespace FirstValueAggregate
             Return IsValidOperandCount(operandCount) AndAlso operandIndex = 0
         End Function
         Public Function ResultType(ParamArray operands As Type()) As Type Implements ICustomFunctionOperator.ResultType
-            Return operands(0)
+            Return operands.FirstOrDefault()
         End Function
     End Class
 

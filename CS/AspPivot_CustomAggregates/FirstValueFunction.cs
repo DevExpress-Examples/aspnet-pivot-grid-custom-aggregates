@@ -1,6 +1,7 @@
 using DevExpress.Data.Filtering;
 using DevExpress.DataProcessing.Criteria;
 using System;
+using System.Linq;
 
 namespace FirstValueAggregate {
     class FirstValueAggregateFunction : ICustomAggregateFunction, ICustomFunctionOperatorBrowsable {
@@ -27,7 +28,7 @@ namespace FirstValueAggregate {
             return IsValidOperandCount(operandCount) && operandIndex == 0;
         }
         public Type ResultType(params Type[] operands) {
-            return operands[0];
+            return operands.FirstOrDefault();
         }
     }
 
