@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="AspPivot_CustomFunctions.WebForm1" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v22.1, Version=22.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" 
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v22.1, Version=22.1.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
     Namespace="DevExpress.Web.ASPxPivotGrid" TagPrefix="dx" %>
 
 <!DOCTYPE html>
